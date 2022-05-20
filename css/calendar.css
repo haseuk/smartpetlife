@@ -1,0 +1,202 @@
+.coll {
+  border-collapse: collapse;
+}
+/*--------------------------------------------------------------------------------------------------------------
+*  Template
+*--------------------------------------------------------------------------------------------------------------*/
+.calendar-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 470px;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.calendar-wrap .calendar {
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+.calendar-wrap .calendar .clicked-date {
+  display: none;
+}
+.calendar-wrap .calendar .calendar-box {
+  padding-top: 0px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.calendar-wrap .calendar .calendar-box .ymd {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.calendar-wrap .calendar .calendar-box .ymd p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.calendar-wrap .calendar .calendar-box .ymd p:last-child {
+  margin-right: 0px;
+}
+.calendar-wrap .calendar .calendar-box .ctr-box {
+  font-size: 0px;
+  text-align: center;
+}
+.calendar-wrap .calendar .calendar-box .ctr-box .btn-cal {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  float: none!important;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.calendar-wrap .calendar .calendar-box .ctr-box .btn-cal.prev:after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrow-prev.png');
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.calendar-wrap .calendar .calendar-box .ctr-box .btn-cal.next:after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrow-next.png');
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.calendar-wrap .calendar .calendar-box .ctr-box span {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr th,
+.calendar-wrap .calendar .calendar-box .cal-table tr td {
+  font-size: 13px;
+  width: 55px;
+  height: 33px;
+  text-align: center;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr th {
+  font-weight: 400;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr td:nth-child(1) {
+  color: #ff0000;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr td:nth-child(7) {
+  color: #000;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr td.today {
+  font-weight: 700;
+  background-color: #daeef3;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr td.day-active {
+  color: #fff;
+  background-color: #ff9494;
+}
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.01.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.01.31'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.02.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.02.02'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.03.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.05.05'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.05.08'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.06.06'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.08.15'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.09.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.09.10'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.09.11'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.10.03'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.10.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2022.12.25'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.01.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.01.21'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.01.22'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.01.23'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.03.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.05.05'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.05.27'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.06.06'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.08.15'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.09.28'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.09.29'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.09.30'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.10.03'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.10.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2023.12.25'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.01.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.02.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.02.10'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.02.11'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.03.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.05.05'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.05.15'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.06.06'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.08.15'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.09.16'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.09.17'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.09.18'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.10.03'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.10.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2024.12.25'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.01.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.01.28'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.01.29'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.01.30'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.03.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.05.05'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.06.06'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.08.15'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.10.03'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.10.05'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.10.06'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.10.07'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.10.08'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.10.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2025.12.25'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.01.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.02.16'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.02.17'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.02.18'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.03.01'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.05.05'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.05.24'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.06.06'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.08.15'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.09.24'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.09.25'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.09.26'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.10.03'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.10.09'],
+.calendar-wrap .calendar .calendar-box .cal-table tr [data-fdate='2026.12.25'] {
+  color: #ff0000 !important;
+}
+/*# sourceMappingURL=calendar.css.map */

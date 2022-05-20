@@ -1,0 +1,249 @@
+<div class="inner">
+  <h3>접종정보</h3>
+  <div class="cont" data-view="1">
+    <div class="profile-img">
+      <img src="img/member/img_profile.png" alt="">
+    </div>
+    <div class="nm">버터</div>
+
+    <!-- ##### bir클래스 i에 female 여자 아이콘-->
+    <!-- ##### bir클래스 i에 male 남자 아이콘-->
+    <p class="bir"><i class="female"></i>7년 2개월</p>
+    <div class="tab-wrap">
+      <a class="tab" data-info="1">접종정보</a>
+      <a class="tab" data-info="2">진료비내역</a>
+      <a class="tab" data-info="3">진료기록</a>
+    </div>
+
+    <!-- ##### 접종정보-->
+    <div class="list-cont list1">
+      <div class="list-box">
+        <p class="tit">이달의 일정</p>
+        <div class="thumb"><img src="img/member/img_profile.png" alt=""></div>
+        <div class="txt-wrap">
+          <p class="tit">심장사상충 예방약 급여</p>
+          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+        </div>
+      </div>
+      <div class="list-box">
+        <p class="tit">접종내역</p>
+        <div class="list-box-inner">
+          <!--### tr에 inco클래스면 접종여부에 체크표시-->
+          <!--### tr에 uninco클래스면 접종여부에 언체크표시 및 접종일자에 미접종 텍스트-->
+          <table cellpadding="0" cellspacing="0" border="0">
+            <colgroup>
+              <col width="62%">
+              <col width="20%">
+              <col width="18%">
+            </colgroup>
+            <tr>
+              <th>예방접종 종류</th>
+              <th>접종여부</th>
+              <th>접종일자</th>
+            </tr>
+            <tr class="inco">
+              <td>종합백신</td>
+              <td><i></i></td>
+              <td>2021.10.02</td>
+            </tr>
+            <tr class="uninco">
+              <td>코로나장염</td>
+              <td class="uninco"><i></i></td>
+              <td></td>
+            </tr>
+            <tr class="inco">
+              <td>켄넬코프</td>
+              <td><i></i></td>
+              <td>2021.10.02</td>
+            </tr>
+            <tr class="inco">
+              <td>광견병</td>
+              <td><i></i></td>
+              <td>2021.10.02</td>
+            </tr>
+            <tr class="uninco">
+              <td>인플루엔자</td>
+              <td><i></i></td>
+              <td>2021.10.02</td>
+            </tr>
+          </table>
+          <table cellpadding="0" cellspacing="0" border="0">
+            <colgroup>
+              <col width="62%">
+              <col width="38%">
+            </colgroup>
+            <tr>
+              <th>다음 예방 접종일</th>
+              <th>접종일자</th>
+            </tr>
+            <tr>
+              <td>종합백신</td>
+              <td>2021.10.02</td>
+            </tr>
+            <tr>
+              <td>코로나장염</td>
+              <td>2021.10.02</td>
+            </tr>
+          </table>
+          <div class="noti">
+            <p><img src="img/member/ico-noti.png" alt=""> 예방접종은 선택이 아닌 필수!</p>
+            <ul>
+              <li>종합백신: 6~8주 차에 2~3주 간격으로 총 5회</li>
+              <li>코로나 장염: 6~8주 차에 2~3주 간격으로 총 2~3회</li>
+              <li>켄넬코프: 10~12주 차에 2~3주 간격으로 총 2~3회</li>
+              <li>광견병: 12주 차, 1년 차에 각 1번씩 총 2회</li>
+              <li>인플루엔자: 14, 16주 차에 각 1번씩 총 2회</li>
+            </ul>
+            <p class="txt">첫 예방접종이 끝났다면, 모두 1년 주기로 접종해 주면 됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ##### 접종정보-->
+    <div class="list-cont list2">
+      <div class="select">
+        <select>
+          <option value="m2">2022년 2월</option>
+          <option value="m3">2022년 3월</option>
+          <option value="m4">2022년 4월</option>
+          <option value="m5">2022년 5월</option>
+          <option value="m6">2022년 6월</option>
+          <option value="m7">2022년 7월</option>
+          <option value="m8">2022년 8월</option>
+          <option value="m9">2022년 9월</option>
+          <option value="m10">2022년 10월</option>
+          <option value="m11">2022년 11월</option>
+          <option value="m12">2022년 12월</option>
+        </select>
+      </div>
+
+
+      <!-- ##### 캘린더1 -->
+      <div class="cal-wrap">
+        <a class="cal-btn" id="preventMonth"><input type="button" id="preventMonth_Button" onclick="prevMonth()"></a>
+        <a class="cal-btn" id="nextMonth"><input type="button" id="nextMonth_Button" onclick="nextMonth()"></a>
+        <table id="calendar_table">
+          <tr id="mainBar">
+          </tr>
+          <tr>
+            <th>일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+          </tr>
+        </table>
+      </div>
+      <script>
+        let today = new Date();
+        let todayYear = today.getFullYear();
+        let todayMonth = today.getMonth() +1;
+        let calendar = document.getElementById("calendar_table");
+        function buildCalendar(){
+          let firstDate = new Date(todayYear, todayMonth-1,1);
+          let lastDate = new Date(todayYear, todayMonth,0);
+          let day = firstDate.getDay();
+          let week = Math.ceil(lastDate.getDate()/7) + 1;
+          let today_yearMonth = todayYear + " - " + todayMonth;
+          let leftDays = 7; // setDays 와 반비례
+          let setDays = 1;// leftDays 와 반비례
+          let nextMonthDate = 1;
+          for(i = 1; i < week; i++){
+            let row = calendar.insertRow();
+            while(day != 0){
+              row.insertCell().innerHTML = "";
+              day -= 1;
+              leftDays -= 1;
+            } // 1주
+            while(leftDays != 0){
+              if(setDays > lastDate.getDate()){
+                row.insertCell().innerHTML = nextMonthDate;
+                leftDays -= 1;
+                nextMonthDate += 1;
+              }else{
+                row.insertCell().innerHTML = setDays;
+                setDays +=1;
+                leftDays -= 1;
+              }
+            }
+            leftDays = 7;
+          }
+          setDays -=1;
+          if(setDays != lastDate.getDate()){
+            let row = calendar.insertRow();
+            while(setDays != lastDate.getDate()){
+              setDays++;
+              leftDays--;
+              row.insertCell().innerHTML = setDays;
+            }
+            while(leftDays != 0){
+              row.insertCell().innerHTML = nextMonthDate;
+              nextMonthDate++;
+              leftDays--;
+            }
+          }
+          document.getElementById("yearMonth").innerHTML= today_yearMonth;
+        }
+        buildCalendar();
+        function deleteCalendar(){
+          while(calendar.rows.length > 2){
+            calendar.deleteRow(2);
+          }
+        }
+        function prevMonth(){
+          todayMonth = todayMonth -1;
+          if(todayMonth == 0){
+            todayMonth = 12;
+            todayYear -= 1;
+          }
+          deleteCalendar();
+          today = new Date(todayYear,todayMonth-1);
+          buildCalendar();
+        }
+        function nextMonth(){
+          todayMonth +=1;
+          if(todayMonth == 13){
+            todayMonth = 1;
+            todayYear = todayYear +1;
+          }
+          deleteCalendar();
+          today = new Date(todayYear,todayMonth - 1);
+          buildCalendar();
+        }
+      </script>
+    </div>
+
+    <!-- ##### 진료기록-->
+    <!-- ##### list3에 non클래스 들어가면 자료없음 non-rec 노출됨-->
+    <div class="list-cont list3">
+      <ul>
+        <li>
+          <img src="img/member/bill1.png" alt="">
+          <p>혈당검사</p>
+        </li>
+        <li>
+          <img src="img/member/bill2.png" alt="">
+          <p>재활결과</p>
+        </li>
+        <li>
+          <img src="img/member/bill3.png" alt="">
+          <p>수술기록</p>
+        </li>
+      </ul>
+      <span>사진 등록시 타이틀 입력하면 표시 됩니다.</span>
+
+      <div class="non-rec">
+        <img src="img/member/icon_record.svg" alt="" class="non-img">
+        <p>등록된 자료가 없습니다.<br> 영수증 또는 진료보관서를 스캔하여 자료를 등록해 주세요.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="total">
+    <p>이번달 총 지출내역 <i><span>850,000</span> 원</i></p>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+@import "asset";
+
+.calendar-wrap { .ib; .vam; .w(470); .bgc(#fff); .p(30,10); .-box;
+  .calendar { .pb(20); .-box; .-b(#e5e5e5);
+    .clicked-date { .hide; }
+    .calendar-box { .p(0,25); .-box;
+      .ymd { .tc; .mb(20);
+        p { .fs(24); .bold; .mr(5); .ib; .vam;
+          &:last-child { .mr(0); }
+        }
+      }
+      .ctr-box { .fs(0); .tc;
+        .btn-cal { .wh(20,20); .rel; .m(0,15); float: none!important; .ib; .vam; .bgc(#fff);
+          &.prev:after { .cnt; .wh(9,10); .contain('../img/arrow-prev.png'); .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
+          &.next:after { .cnt; .wh(9,10); .contain('../img/arrow-next.png'); .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
+        }
+        span { .fs(13); .bold; color:#333; .ib; .vam; }
+      }
+      .cal-table {
+        tr {
+          th, td { .fs(13); .wh(55,33); .tc; }
+          th { .regular; }
+          td {
+            &:nth-child(1)  { color:#ff0000; }
+            &:nth-child(7)  { color:#000; }
+            &.today { .bold; .bgc(#daeef3); }
+            &.day-active { color:#fff; .bgc(#ff9494); }
+          }
+          [data-fdate='2022.01.01'],[data-fdate='2022.01.31'],[data-fdate='2022.02.01'],[data-fdate='2022.02.02'],[data-fdate='2022.03.01'],[data-fdate='2022.05.05'],[data-fdate='2022.05.08'],[data-fdate='2022.06.06'],[data-fdate='2022.08.15'],[data-fdate='2022.09.09'],[data-fdate='2022.09.10'],[data-fdate='2022.09.11'],[data-fdate='2022.10.03'],[data-fdate='2022.10.09'],[data-fdate='2022.12.25'],
+          [data-fdate='2023.01.01'],[data-fdate='2023.01.21'],[data-fdate='2023.01.22'],[data-fdate='2023.01.23'],[data-fdate='2023.03.01'],[data-fdate='2023.05.05'],[data-fdate='2023.05.27'],[data-fdate='2023.06.06'],[data-fdate='2023.08.15'],[data-fdate='2023.09.28'],[data-fdate='2023.09.29'],[data-fdate='2023.09.30'],[data-fdate='2023.10.03'],[data-fdate='2023.10.09'],[data-fdate='2023.12.25'],
+          [data-fdate='2024.01.01'],[data-fdate='2024.02.09'],[data-fdate='2024.02.10'],[data-fdate='2024.02.11'],[data-fdate='2024.03.01'],[data-fdate='2024.05.05'],[data-fdate='2024.05.15'],[data-fdate='2024.06.06'],[data-fdate='2024.08.15'],[data-fdate='2024.09.16'],[data-fdate='2024.09.17'],[data-fdate='2024.09.18'],[data-fdate='2024.10.03'],[data-fdate='2024.10.09'],[data-fdate='2024.12.25'],
+          [data-fdate='2025.01.01'],[data-fdate='2025.01.28'],[data-fdate='2025.01.29'],[data-fdate='2025.01.30'],[data-fdate='2025.03.01'],[data-fdate='2025.05.05'],[data-fdate='2025.06.06'],[data-fdate='2025.08.15'],[data-fdate='2025.10.03'],[data-fdate='2025.10.05'],[data-fdate='2025.10.06'],[data-fdate='2025.10.07'],[data-fdate='2025.10.08'],[data-fdate='2025.10.09'],[data-fdate='2025.12.25'],
+          [data-fdate='2026.01.01'],[data-fdate='2026.02.16'],[data-fdate='2026.02.17'],[data-fdate='2026.02.18'],[data-fdate='2026.03.01'],[data-fdate='2026.05.05'],[data-fdate='2026.05.24'],[data-fdate='2026.06.06'],[data-fdate='2026.08.15'],[data-fdate='2026.09.24'],[data-fdate='2026.09.25'],[data-fdate='2026.09.26'],[data-fdate='2026.10.03'],[data-fdate='2026.10.09'],[data-fdate='2026.12.25'] { color:#ff0000!important; }
+        }
+      }
+    }
+  }
+}
+

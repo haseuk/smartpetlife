@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e390b1c5-9a68-458b-a68d-0bb3b4298d88" name="smartpet" url="http://smartpet.devcraft.kr">
+        <fileTransfer rootFolder="/var/www/smartpet" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="810af4e2-6a20-46f3-bc1b-5c5e1f5dd4dc" sshConfig="root@devcraft.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

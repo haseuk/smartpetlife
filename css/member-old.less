@@ -249,13 +249,33 @@ img { image-rendering:auto; backface-visibility:hidden; }
                     }
                   }
                   &.list2 { .tl; .rel; .h(500);
-                    .calendar-wrap1 {
-                      .calendar {
-                        .calendar-box {
-                          .ctr-box { .ib;
-                            button { .wh(20,20); .bgc(#000); .abs; .lt; z-index: 10;
-                              &.prev { .lt; }
-                              &.next { .rt; }
+                    .cal-wrap { .abs; .rt;
+                      .cal-btn { .abs; .rt;
+                        &:nth-child(1) { .r(38); }
+                        input { .wh(28,28); .-a; .bgc(#fff); .ib; }
+                      }
+                      #preventMonth_Button { .contain('../img/member/btn_prev.png'); }
+                      #nextMonth_Button { .contain('../img/member/btn_next.png'); }
+                      #calendar_table { .fs(15); .wf; .tc; .t-fix; .coll; .mt(40);
+                        tr {
+                          th, td { .fs(15); .w(54); .ls(-1); }
+                          th { color:#AAAAAA; .lh(40); .pb(30); }
+                          td { .h(77); z-index: 1; .rel; .vat;
+                            &:nth-child(1) { color:#FA5353; }
+                            &.today { .bgc(#fff); .regular; .rel; color:#fff;
+                              &:after { .cnt; .bgc(#103831); .wh(52,52); .abs; .lt(50%,50%); transform: translate(-50%,-50%); .br(50%); z-index: -1; }
+                            }
+                            &.day-active { .bgc(#fff); color:#333; }
+                            span { .wf; .ib; .abs; .lt(50%,20); transform: translateX(-50%); }
+                            i { .wh(9,9); .br(50%); .ib; .m(0,2);
+                              &:nth-child(1) { .bgc(#FAB856); }
+                              &:nth-child(2) { .bgc(#6F95F2); }
+                              &:nth-child(3) { .bgc(#96C15A); }
+                            }
+                          }
+                          &:nth-child(4) { .rel;
+                            td:nth-child(3) { .bgc(#F5F5F5);
+                              &:after { content:'80,000'; .abs; .wh(100%,25);.lb(50%,5); transform: translateX(-50%); }
                             }
                           }
                         }
@@ -347,6 +367,31 @@ img { image-rendering:auto; backface-visibility:hidden; }
 
           &.account-calendar {
             .inner {
+              .calendar-wrap { .wh(100%,492); .-a(#eee); .p(20,0,30); .br(6); .-box; .mb(30); .rel; z-index: 2;
+                .calendar { .p(0); .-b;
+                  .calendar-box { .p(0);
+                    .ymd, .ctr-box { .hide; }
+                    .cal-table {
+                      tr {
+                        th, td { .fs(14); .w(54); .ls(-1); }
+                        th { color:#AAAAAA; .lh(40); }
+                        td { .lh(77); z-index: 1; .rel;
+                          &.today { .bgc(#fff); .regular; .rel; color:#fff;
+                            &:after { .cnt; .bgc(#103831); .wh(52,52); .abs; .lt(50%,50%); transform: translate(-50%,-50%); .br(50%); z-index: -1; }
+                          }
+                          &.day-active { background: transparent; color:#333; }
+                          span { .wf; .ib; .abs; .lt(50%,36); transform: translateX(-50%); }
+                          i { .wh(9,9); .br(50%); .ib; .m(0,2);
+                            &:nth-child(1) { .bgc(#FAB856); }
+                            &:nth-child(2) { .bgc(#6F95F2); }
+                            &:nth-child(3) { .bgc(#96C15A); }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
               .sc-tit { .fs(16); .lh(19); .ls(-2); .mb(14); }
               .swiper-container { .pt(50); .mt(-50);
                 .swiper-slide { .bgc(#fff);
@@ -608,31 +653,6 @@ img { image-rendering:auto; backface-visibility:hidden; }
             }
           }
           .hosp-info { .ib!important; }
-        }
-      }
-    }
-  }
-}
-.calendar-wrap { .wh(100%,492); .-a(#eee); .p(20,0,30); .br(6); .-box; .mb(30); .rel; z-index: 2;
-  .calendar { .p(0); .-b!important;
-    .calendar-box { .p(0);
-      .ymd, .ctr-box { .hide; }
-      .cal-table {
-        tr {
-          th, td { .fs(14); .w(54); .ls(-1); }
-          th { color:#AAAAAA; .lh(40); }
-          td { .lh(77); z-index: 1; .rel;
-            &.today { .bgc(#fff)!important; .regular; .rel; color:#fff;
-              &:after { .cnt; .bgc(#103831); .wh(52,52); .abs; .lt(50%,50%); transform: translate(-50%,-50%); .br(50%); z-index: -1; }
-            }
-            &.day-active { background: transparent; color:#333; }
-            span { .wf; .ib; .abs; .lt(50%,36); transform: translateX(-50%); }
-            i { .wh(9,9); .br(50%); .ib; .m(0,2);
-              &:nth-child(1) { .bgc(#FAB856); }
-              &:nth-child(2) { .bgc(#6F95F2); }
-              &:nth-child(3) { .bgc(#96C15A); }
-            }
-          }
         }
       }
     }

@@ -35,6 +35,7 @@ const init = {
 };
 
 const $calBody = document.querySelector('.cal-body');
+const $calBody1 = document.querySelector('.cal-body1');
 const $btnNext = document.querySelector('.btn-cal.next');
 const $btnPrev = document.querySelector('.btn-cal.prev');
 
@@ -62,16 +63,16 @@ function loadYYMM (fullDate) {
     markToday = init.today.getDate();
   }
 
-  document.querySelector('.cal-year').textContent = yy +'.';
-  document.querySelector('.cal-month').textContent = init.monList[mm];
+  // document.querySelector('.cal-year').textContent = yy +'.';
+  // document.querySelector('.cal-month').textContent = init.monList[mm];
 
-  let ymd = document.querySelector('.ymd');
-  let y = ymd.querySelector('.y s');
-  let m = ymd.querySelector('.m s');
-  let d = ymd.querySelector('.d s');
-  y.innerHTML = yy;
-  m.innerHTML = new Date().getMonth() + 1;
-  d.innerHTML = dd;
+  // let ymd = document.querySelector('.ymd');
+  // let y = ymd.querySelector('.y s');
+  // let m = ymd.querySelector('.m s');
+  // let d = ymd.querySelector('.d s');
+  // y.innerHTML = yy;
+  // m.innerHTML = new Date().getMonth() + 1;
+  // d.innerHTML = dd;
 
   let trtd = '';
   let startCount;
@@ -99,44 +100,45 @@ function loadYYMM (fullDate) {
     trtd += '</tr>';
   }
   $calBody.innerHTML = trtd;
+  $calBody1.innerHTML = trtd;
 }
 
 /**
  * @param {string} val
  */
-function createNewList (val) {
-  let id = new Date().getTime() + '';
-  let yy = init.activeDate.getFullYear();
-  let mm = init.activeDate.getMonth() + 1;
-  let dd = init.activeDate.getDate();
-  const $target = $calBody.querySelector(`.day[data-date="${dd}"]`);
-
-  let date = yy + '.' + init.addZero(mm) + '.' + init.addZero(dd);
-
-  let eventData = {};
-  eventData['date'] = date;
-  eventData['memo'] = val;
-  eventData['complete'] = false;
-  eventData['id'] = id;
-  init.event.push(eventData);
-  $todoList.appendChild(createLi(id, val, date));
-}
+// function createNewList (val) {
+//   let id = new Date().getTime() + '';
+//   let yy = init.activeDate.getFullYear();
+//   let mm = init.activeDate.getMonth() + 1;
+//   let dd = init.activeDate.getDate();
+//   const $target = $calBody.querySelector(`.day[data-date="${dd}"]`);
+//
+//   let date = yy + '.' + init.addZero(mm) + '.' + init.addZero(dd);
+//
+//   let eventData = {};
+//   eventData['date'] = date;
+//   eventData['memo'] = val;
+//   eventData['complete'] = false;
+//   eventData['id'] = id;
+//   init.event.push(eventData);
+//   $todoList.appendChild(createLi(id, val, date));
+// }
 
 loadYYMM(init.today);
-loadDate(init.today.getDate(), init.today.getDay());
+// loadDate(init.today.getDate(), init.today.getDay());
 
 $btnNext.addEventListener('click', () => loadYYMM(init.nextMonth()));
 $btnPrev.addEventListener('click', () => loadYYMM(init.prevMonth()));
 
-$calBody.addEventListener('click', (e) => {
-  if (e.target.classList.contains('day')) {
-    if (init.activeDTag) {
-      init.activeDTag.classList.remove('day-active');
-    }
-    let day = Number(e.target.textContent);
-    loadDate(day, e.target.cellIndex);
-    e.target.classList.add('day-active');
-    init.activeDTag = e.target;
-    init.activeDate.setDate(day);
-  }
-});
+// $calBody.addEventListener('click', (e) => {
+//   if (e.target.classList.contains('day')) {
+//     if (init.activeDTag) {
+//       init.activeDTag.classList.remove('day-active');
+//     }
+//     let day = Number(e.target.textContent);
+//     loadDate(day, e.target.cellIndex);
+//     e.target.classList.add('day-active');
+//     init.activeDTag = e.target;
+//     init.activeDate.setDate(day);
+//   }
+// });

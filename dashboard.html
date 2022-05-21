@@ -8,13 +8,12 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/member.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-  <link rel="stylesheet" href="css/calendar.css">
   <script src="js/include.js" defer></script>
 </head>
 <body>
 <div class="container">
   <div class="wrap">
-    <section class="dashboard" data-page="2">
+    <section class="dashboard" data-page="1">
       <aside>
         <h1><a href="dashboard.html">SMART PRT LIFE</a></h1>
         <a href="" class="dir-shop"><img src="img/member/arrow-r.svg" alt=""></a>
@@ -178,7 +177,7 @@
       <article class="arti-cont inoculation">
         <div class="inner">
           <h3>접종정보</h3>
-          <div class="cont" data-view="2">
+          <div class="cont" data-view="1">
             <div class="profile-img">
               <img src="img/member/img_profile.png" alt="">
             </div>
@@ -281,59 +280,38 @@
             <!-- ##### 접종정보-->
             <div class="list-cont list2">
               <div class="select">
-                <select>
-                  <option value="m2">2022년 2월</option>
-                  <option value="m3">2022년 3월</option>
-                  <option value="m4">2022년 4월</option>
-                  <option value="m5">2022년 5월</option>
-                  <option value="m6">2022년 6월</option>
-                  <option value="m7">2022년 7월</option>
-                  <option value="m8">2022년 8월</option>
-                  <option value="m9">2022년 9월</option>
-                  <option value="m10">2022년 10월</option>
-                  <option value="m11">2022년 11월</option>
-                  <option value="m12">2022년 12월</option>
+                <select class="cal1-select">
+                  <option value="2022">2022년 1월</option>
+                  <option value="2022">2022년 2월</option>
+                  <option value="2022">2022년 3월</option>
+                  <option value="2022">2022년 4월</option>
+                  <option value="2022">2022년 5월</option>
+                  <option value="2022">2022년 6월</option>
+                  <option value="2022">2022년 7월</option>
+                  <option value="2022">2022년 8월</option>
+                  <option value="2022">2022년 9월</option>
+                  <option value="2022">2022년 10월</option>
+                  <option value="2022">2022년 11월</option>
+                  <option value="2022">2022년 12월</option>
                 </select>
               </div>
 
-
               <!-- ##### 캘린더1 -->
               <div class="calendar-wrap calendar-wrap1">
-                <div class="calendar">
-                  <div class="clicked-date">
-                    <div class="cal-day"></div>
-                    <div class="cal-date"></div>
-                  </div>
-                  <div class="calendar-box">
-                    <div class="ymd">
-                      <p class="y"><s></s>년</p>
-                      <p class="m"><s></s>월</p>
-                      <p class="d"><s></s>일</p>
-                    </div>
-                    <div class="ctr-box clearfix">
-                      <button type="button" title="prev" class="btn-cal1 prev">
-                      </button>
-                      <span class="cal-year"></span>
-                      <span class="cal-month"></span>
-                      <button type="button" title="next" class="btn-cal1 next">
-                      </button>
-                    </div>
-                    <table class="cal-table">
-                      <thead>
-                      <tr>
-                        <th>일</th>
-                        <th>월</th>
-                        <th>화</th>
-                        <th>수</th>
-                        <th>목</th>
-                        <th>금</th>
-                        <th>토</th>
-                      </tr>
-                      </thead>
-                      <tbody class="cal-body1"></tbody>
-                    </table>
-                  </div>
-                </div>
+                <a class="month-change prev" onclick="monthChange('prev');"></a>
+                <a class="month-change next" onclick="monthChange('next');"></a>
+                <table>
+                  <tr>
+                    <th>일</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                    <th>토</th>
+                  </tr>
+                  <tbody class="month1"></tbody>
+                </table>
               </div>
             </div>
 
@@ -363,13 +341,11 @@
             </div>
           </div>
 
-
           <div class="total">
             <p>이번달 총 지출내역 <i><span>850,000</span> 원</i></p>
           </div>
         </div>
       </article>
-
 
       <!--###병원-->
       <article class="arti-cont arti-style hospital">
@@ -529,7 +505,6 @@
         </div>
       </article>
 
-
       <!--###진료비-->
       <article class="arti-cont arti-style expenses">
         <div class="inner">
@@ -674,7 +649,6 @@
           </div>
         </div>
       </article>
-
 
       <!--###기본정보/진료정보&리뷰-->
       <article class="arti-cont-r hosp-info">
@@ -856,479 +830,298 @@
         </div>
       </article>
 
-
       <!--###가계부, 캘린더-->
       <article class="arti-cont-r account-calendar">
         <div class="inner inner1">
           <h3>가계부</h3>
           <div class="select">
-            <select>
-              <option value="m2">2022년 2월</option>
-              <option value="m3">2022년 3월</option>
-              <option value="m4">2022년 4월</option>
-              <option value="m5">2022년 5월</option>
-              <option value="m6">2022년 6월</option>
-              <option value="m7">2022년 7월</option>
-              <option value="m8">2022년 8월</option>
-              <option value="m9">2022년 9월</option>
-              <option value="m10">2022년 10월</option>
-              <option value="m11">2022년 11월</option>
-              <option value="m12">2022년 12월</option>
+            <select class="graph-select">
+              <option value="2022">2022년 1월</option>
+              <option value="2022">2022년 2월</option>
+              <option value="2022">2022년 3월</option>
+              <option value="2022">2022년 4월</option>
+              <option value="2022">2022년 5월</option>
+              <option value="2022">2022년 6월</option>
+              <option value="2022">2022년 7월</option>
+              <option value="2022">2022년 8월</option>
+              <option value="2022">2022년 9월</option>
+              <option value="2022">2022년 10월</option>
+              <option value="2022">2022년 11월</option>
+              <option value="2022">2022년 12월</option>
             </select>
           </div>
           <div class="swiper-container swiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="graph">
-                  <canvas id="doughnut-chart1"></canvas>
-                  <div class="legend">
-                    <ul>
-                      <li class="list1"><i></i>진료</li>
-                      <li class="list2"><i></i>입원</li>
-                      <li class="list3"><i></i>수술</li>
-                      <li class="list4"><i></i>약처방</li>
-                    </ul>
-                    <ul>
-                      <li class="list5"><i></i>미용</li>
-                      <li class="list6"><i></i>간식 및 물품</li>
-                      <li class="list7"><i></i>기타</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="history">
+            <div class="swiper-slide">
+              <div class="graph">
+                <canvas id="doughnut-chart1"></canvas>
+                <div class="legend">
                   <ul>
-                    <li>
-                      <p class="date">02.20 화</p>
-                      <table cellpadding="0" cellspacing="0" border="0">
-                        <colgroup>
-                          <col width="40%">
-                          <col width="48%">
-                          <col width="auto">
-                        </colgroup>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li>
-                      <p class="date">02.21 수</p>
-                      <table cellpadding="0" cellspacing="0" border="0">
-                        <colgroup>
-                          <col width="40%">
-                          <col width="48%">
-                          <col width="auto">
-                        </colgroup>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li>
-                      <p class="date">02.22 목</p>
-                      <table cellpadding="0" cellspacing="0" border="0">
-                        <colgroup>
-                          <col width="40%">
-                          <col width="48%">
-                          <col width="auto">
-                        </colgroup>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                        <tr>
-                          <td>까망베르</td>
-                          <td>간식 및 물품</td>
-                          <td>40,000</td>
-                        </tr>
-                        <tr>
-                          <td>버터</td>
-                          <td>약처방</td>
-                          <td>22,000</td>
-                        </tr>
-                      </table>
-                    </li>
+                    <li class="list1"><i></i>진료</li>
+                    <li class="list2"><i></i>입원</li>
+                    <li class="list3"><i></i>수술</li>
+                    <li class="list4"><i></i>약처방</li>
+                  </ul>
+                  <ul>
+                    <li class="list5"><i></i>미용</li>
+                    <li class="list6"><i></i>간식 및 물품</li>
+                    <li class="list7"><i></i>기타</li>
                   </ul>
                 </div>
-                <div class="expenses">
-                  <table cellspacing="0" cellpadding="0" border="0">
-                    <colgroup>
-                      <col width="60%">
-                      <col width="40%">
-                    </colgroup>
-                    <tr>
-                      <td>이번달 총 지출내역</td>
-                      <td><b>850,000</b> 원</td>
-                    </tr>
-                    <tr>
-                      <td>진료비</td>
-                      <td><b>400,000</b> 원</td>
-                    </tr>
-                    <tr>
-                      <td>수술비</td>
-                      <td><b>350,000</b> 원</td>
-                    </tr>
-                    <tr>
-                      <td>간식 및 물품</td>
-                      <td><b>50,000</b> 원</td>
-                    </tr>
-                  </table>
-                </div>
+              </div>
+              <div class="history">
+                <ul>
+                  <li>
+                    <p class="date">02.20 화</p>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <colgroup>
+                        <col width="40%">
+                        <col width="48%">
+                        <col width="auto">
+                      </colgroup>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>
+                    <p class="date">02.21 수</p>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <colgroup>
+                        <col width="40%">
+                        <col width="48%">
+                        <col width="auto">
+                      </colgroup>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>
+                    <p class="date">02.22 목</p>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <colgroup>
+                        <col width="40%">
+                        <col width="48%">
+                        <col width="auto">
+                      </colgroup>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                      <tr>
+                        <td>까망베르</td>
+                        <td>간식 및 물품</td>
+                        <td>40,000</td>
+                      </tr>
+                      <tr>
+                        <td>버터</td>
+                        <td>약처방</td>
+                        <td>22,000</td>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+              <div class="expenses">
+                <table cellspacing="0" cellpadding="0" border="0">
+                  <colgroup>
+                    <col width="60%">
+                    <col width="40%">
+                  </colgroup>
+                  <tr>
+                    <td>이번달 총 지출내역</td>
+                    <td><b>850,000</b> 원</td>
+                  </tr>
+                  <tr>
+                    <td>진료비</td>
+                    <td><b>400,000</b> 원</td>
+                  </tr>
+                  <tr>
+                    <td>수술비</td>
+                    <td><b>350,000</b> 원</td>
+                  </tr>
+                  <tr>
+                    <td>간식 및 물품</td>
+                    <td><b>50,000</b> 원</td>
+                  </tr>
+                </table>
               </div>
             </div>
-            <div class="swiper-btn swiper-button-prev"></div>
-            <div class="swiper-btn swiper-button-next"></div>
+            <div class="swiper-btn swiper-button-prev" onclick="graphChange('prev')"></div>
+            <div class="swiper-btn swiper-button-next" onclick="graphChange('next')"></div>
           </div>
         </div>
         <div class="inner inner2">
           <h3>캘린더</h3>
           <div class="select">
-            <select>
-              <option value="m2">2022년 2월</option>
-              <option value="m3">2022년 3월</option>
-              <option value="m4">2022년 4월</option>
-              <option value="m5">2022년 5월</option>
-              <option value="m6">2022년 6월</option>
-              <option value="m7">2022년 7월</option>
-              <option value="m8">2022년 8월</option>
-              <option value="m9">2022년 9월</option>
-              <option value="m10">2022년 10월</option>
-              <option value="m11">2022년 11월</option>
-              <option value="m12">2022년 12월</option>
+            <select class="cal2-select">
+              <option value="2022">2022년 1월</option>
+              <option value="2022">2022년 2월</option>
+              <option value="2022">2022년 3월</option>
+              <option value="2022">2022년 4월</option>
+              <option value="2022">2022년 5월</option>
+              <option value="2022">2022년 6월</option>
+              <option value="2022">2022년 7월</option>
+              <option value="2022">2022년 8월</option>
+              <option value="2022">2022년 9월</option>
+              <option value="2022">2022년 10월</option>
+              <option value="2022">2022년 11월</option>
+              <option value="2022">2022년 12월</option>
             </select>
           </div>
 
           <!-- ##### 가계부 캘린더2 -->
-          <div class="calendar-wrap">
-            <div class="calendar">
-              <div class="clicked-date">
-                <div class="cal-day"></div>
-                <div class="cal-date"></div>
-              </div>
-              <div class="calendar-box">
-                <div class="ymd">
-                  <p class="y"><s></s>년</p>
-                  <p class="m"><s></s>월</p>
-                  <p class="d"><s></s>일</p>
-                </div>
-                <div class="ctr-box clearfix">
-                  <button type="button" title="prev" class="btn-cal prev">
-                  </button>
-                  <span class="cal-year"></span>
-                  <span class="cal-month"></span>
-                  <button type="button" title="next" class="btn-cal next">
-                  </button>
-                </div>
-                <table class="cal-table">
-                  <thead>
-                  <tr>
-                    <th>일</th>
-                    <th>월</th>
-                    <th>화</th>
-                    <th>수</th>
-                    <th>목</th>
-                    <th>금</th>
-                    <th>토</th>
-                  </tr>
-                  </thead>
-                  <tbody class="cal-body"></tbody>
-                </table>
-              </div>
-            </div>
+          <div class="calendar-wrap calendar-wrap2">
+<!--            <a class="month-change prev"></a>-->
+<!--            <a class="month-change next"></a>-->
+            <table class="month2">
+              <thead>
+                <tr>
+                  <th>일</th>
+                  <th>월</th>
+                  <th>화</th>
+                  <th>수</th>
+                  <th>목</th>
+                  <th>금</th>
+                  <th>토</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
           </div>
-          <p class="sc-tit">이달의 일정</p>
-          <div class="swiper-container swiper3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="schedule">
-                  <div class="sch-list">
-                    <ul class="ul-list">
-                      <!-- pet-a 부터 pet-j까지 열마리 애완동물 구분 함 -->
-                      <li class="pet-a">
-                        <div class="thumb"><img src="img/member/img_petlist_2.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-b">
-                        <div class="thumb"><img src="img/member/mask2.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-c">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-d">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-e">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-f">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-g">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-h">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-i">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-j">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="schedule">
-                  <div class="sch-list">
-                    <ul class="ul-list">
-                      <!-- pet-a 부터 pet-j까지 열마리 애완동물 구분 함 -->
-                      <li class="pet-a">
-                        <div class="thumb"><img src="img/member/img_petlist_2.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-b">
-                        <div class="thumb"><img src="img/member/mask2.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-c">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-d">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-e">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-f">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-g">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-h">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-i">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-j">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">3월 4일 금요일 오후 1시 신동물병원</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="schedule">
-                  <div class="sch-list">
-                    <ul class="ul-list">
-
-                      <!-- pet-a 부터 pet-j까지 열마리 애완동물 구분 함 -->
-                      <li class="pet-a">
-                        <div class="thumb"><img src="img/member/img_petlist_2.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-b">
-                        <div class="thumb"><img src="img/member/mask2.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-c">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-d">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-e">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-f">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-g">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-h">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-i">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                      <li class="pet-j">
-                        <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
-                        <div class="txt-wrap">
-                          <p class="tit">심장사상충 예방약 급여</p>
-                          <p class="txt">4월 4일 금요일 오후 1시 신세계동물병원</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+        <p class="sc-tit">이달의 일정</p>
+        <div class="swiper-container swiper3">
+            <div class="swiper-slide">
+              <div class="schedule">
+                <div class="sch-list">
+                  <ul class="ul-list">
+                    <!-- pet-a 부터 pet-j까지 열마리 애완동물 구분 함 -->
+                    <li class="pet-a">
+                      <div class="thumb"><img src="img/member/img_petlist_2.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-b">
+                      <div class="thumb"><img src="img/member/mask2.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-c">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-d">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-e">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-f">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-g">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-h">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-i">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                    <li class="pet-j">
+                      <div class="thumb"><img src="img/member/mask3.png" alt=""></div>
+                      <div class="txt-wrap">
+                        <p class="tit">심장사상충 예방약 급여</p>
+                        <p class="txt">2월 4일 금요일 오후 1시 신세계동물병원</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="swiper-btn swiper-button-prev"></div>
-            <div class="swiper-btn swiper-button-next"></div>
+            <div class="swiper-btn swiper-button-prev" onclick="cal2Change('prev')"></div>
+            <div class="swiper-btn swiper-button-next" onclick="cal2Change('next')"></div>
           </div>
         </div>
       </article>
@@ -1565,7 +1358,7 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<script src="js/calendar.js"></script>
+<script src="js/d-calendar.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.min.js"></script>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=npl3ycgrkh&submodules=geocoder"></script><!--####인증키 변경 후 사용-->
@@ -1631,57 +1424,122 @@
     },
   });
 
-  // 캘린더
-  function petList() {
-    // 캘린더 넘어가기 클릭시마다 해당 날짜별로 petA, petB, petC에 날짜 데이터 로드
-    let petA = ['20220520', '20220525']; //첫번째 애완 달력에 표시될 날짜
-    let petB = ['20220520', '20220523']; //첫번째 애완 달력에 표시될 날짜
-    let petC = ['20220520', '20220523', '20220525']; //첫번째 애완 달력에 표시될 날짜
 
-    let calendarDay = document.querySelectorAll('.cal-body .day');
-    let eDate = [];
-    let list = [];
-    let idx = [];
 
-    Array.prototype.forEach.call(calendarDay, function(e) {
-      let dateVal = e.getAttribute('data-fdate');
-      eDate.push(dateVal.replace(/[^\d]+/g,''));
-      list.push(e)
-    });
-    for (let i = 0; i < list.length; i++) {
-      list[i].innerHTML += '<span></span>';
-    }
+  // 캘린더에 들어가는 데이터 형태
+  var month1Dots = [{ ymd: '20220523', price: '50,000' }, { ymd: '20220521', price: '800,000' }, { ymd: '20220530', price: '800,000' }];
+  var month2Dots = [{ ymd: '20220503', pet: 'pet-f' },{ ymd: '20220505', pet: 'pet-a' },{ ymd: '20220505', pet: 'pet-b' },{ ymd: '20220510', pet: 'pet-j' },{ ymd: '20220510', pet: 'pet-a' },{ ymd: '20220510', pet: 'pet-i' }, { ymd: '20220521', pet: 'pet-b' }, { ymd: '20220521', pet: 'pet-c' }];
 
-    //petA
-    for (let j = 0; j < petA.length; j++) {
-      idx.push(eDate.indexOf(petA[j]));
-    }
-    //petB
-    for (let j = 0; j < petB.length; j++) {
-      idx.push(eDate.indexOf(petB[j]));
-    }
-    //petC
-    for (let j = 0; j < petC.length; j++) {
-      idx.push(eDate.indexOf(petC[j]));
-    }
 
-    for (let k = 0; k < idx.length; k++) {
-      if(list[idx[k]]) {
-        list[idx[k]].querySelector('span').innerHTML += '<i></i>';
-      }
+
+
+  var cal1 = new DCalendar(function(yyyy, mm, tbody) {
+    document.querySelector('tbody.month1').innerHTML = tbody;
+  }, function(ymd) {
+    console.log(ymd)
+  }, function(ymd){
+    var dot = month1Dots.filter(function(dot) { return dot.ymd === ymd })[0];
+    if (dot) return '<i class="price"><s>' + dot.price + '</s></i>';
+    return '';
+  });
+
+  function _pad(n, width) { n = n + ''; return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n; }
+  let tDay = new Date().getFullYear() + _pad(new String(new Date().getMonth() + 1), 2) + _pad(new String(new Date().getDate()), 2)
+  let isMonth = new Date().getMonth();
+  let cal1Select = document.querySelector('.cal1-select');
+  let graphSelect = document.querySelector('.graph-select');
+  let cal2Select = document.querySelector('.cal2-select');
+
+  let selects = document.querySelectorAll('select');
+  // 초기 셀렉트
+  Array.prototype.forEach.call(selects, function(e) {
+    e[isMonth].selected = true;
+  });
+
+
+  let cal1NowMonth = isMonth+1; // 캘린더1 셀렉터
+  let graphNowMonth = isMonth+1; // 그래프 셀렉터
+  let cal2NowMonth = isMonth+1; // 캘린더2 셀렉터
+  // 캘린더 1 셀렉터 연동 달 넘기기
+  function monthChange(v) {
+    if(v === 'prev') {
+      cal1.prev();
+      cal1NowMonth = cal1NowMonth -1;
+      cal1Select[cal1NowMonth-1].selected = true;
+    } else {
+      cal1.next();
+      cal1NowMonth = cal1NowMonth +1;
+      cal1Select[cal1NowMonth-1].selected = true;
     }
   }
-  //다음달로 넘어가기
-  // swiperNext.addEventListener('click', function() {
-  //   loadYYMM((init.nextMonth()));
-  //   petList();
-  // });
-  // //이전달로 넘어가기
-  // swiperPrev.addEventListener('click', function() {
-  //   loadYYMM((init.prevMonth()))
-  //   petList();
-  // });
-  petList();
+
+  // select로 캘린더1 월 선택
+  cal1Select.addEventListener('change', function () {
+    changeSelect();
+  });
+  function changeSelect(){
+    let sIdx = cal1Select.selectedIndex + 1;
+    let sVal = cal1Select.options[cal1Select.selectedIndex].value;
+    cal1.setMonth(sVal, sIdx);
+    cal1NowMonth = sIdx;
+  }
+
+
+  // 그래프 셀렉터 연동 달 넘기기
+  function graphChange(v) {
+    if(v === 'prev') {
+      graphNowMonth = graphNowMonth -1;
+      graphSelect[graphNowMonth-1].selected = true;
+    } else {
+      graphNowMonth = graphNowMonth +1;
+      graphSelect[graphNowMonth-1].selected = true;
+    }
+  }
+  graphSelect.addEventListener('change', function () {
+    gSelect();
+  });
+  function gSelect(){
+    let sIdx = graphSelect.selectedIndex + 1;
+    graphNowMonth = sIdx;
+  }
+
+
+  // 캘린더2
+  var cal2 = new DCalendar(function(yyyy, mm, tbody) {
+    document.querySelector('.month2 tbody').innerHTML = tbody;
+  }, function(ymd){
+    console.log(ymd);
+  }, function(ymd) {
+    return month2Dots.filter(function(dot) { return dot.ymd === ymd }).map(function(dot) { return '<i class="'+ dot.pet +'"></i>' } ).join('')
+  });
+
+  let tDayMark = document.querySelector('.calendar-wrap2 .d-'+tDay);
+  tDayMark.classList.add('active-day');
+
+
+  function cal2Change(v) {
+    if(v === 'prev') {
+      cal2.prev();
+      cal2NowMonth = cal2NowMonth -1;
+      cal2Select[cal2NowMonth-1].selected = true;
+    } else {
+      cal2.next();
+      cal2NowMonth = cal2NowMonth +1;
+      cal2Select[cal2NowMonth-1].selected = true;
+    }
+  }
+
+  // select로 캘린더2 월 선택
+  cal2Select.addEventListener('change', function () {
+    change2Select();
+  });
+  function change2Select(){
+    let sIdx = cal2Select.selectedIndex + 1;
+    let sVal = cal2Select.options[cal2Select.selectedIndex].value;
+    cal2.setMonth(sVal, sIdx);
+    cal2NowMonth = sIdx;
+  }
+
 
   let dataView = document.querySelector('.inoculation .cont');
   let tabs = document.querySelectorAll('.inoculation .tab');

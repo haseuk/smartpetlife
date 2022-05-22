@@ -350,7 +350,7 @@ img {
   line-height: 1.1875rem;
   border: 0;
   width: 100%;
-  padding-right: 0.625rem;
+  padding-right: 0.9375rem;
   box-sizing: border-box;
   outline: none;
 }
@@ -409,7 +409,12 @@ img {
   color: #AAA;
   margin-top: 0.375rem;
 }
-.container .wrap section.dashboard article .swiper-container .swiper-btn {
+.container .wrap section.dashboard article .swiper-container .swiper-btn,
+.container .wrap section.dashboard article .acc-book .swiper-btn,
+.container .wrap section.dashboard article .calendar-wrap .swiper-btn,
+.container .wrap section.dashboard article .swiper-container .acc-btn,
+.container .wrap section.dashboard article .acc-book .acc-btn,
+.container .wrap section.dashboard article .calendar-wrap .acc-btn {
   width: 2.25rem;
   height: 2.25rem;
   position: absolute;
@@ -419,17 +424,45 @@ img {
   bottom: auto;
   margin: 0rem;
   opacity: 1;
+  cursor: pointer;
 }
-.container .wrap section.dashboard article .swiper-container .swiper-btn:after {
+.container .wrap section.dashboard article .swiper-container .swiper-btn:after,
+.container .wrap section.dashboard article .acc-book .swiper-btn:after,
+.container .wrap section.dashboard article .calendar-wrap .swiper-btn:after,
+.container .wrap section.dashboard article .swiper-container .acc-btn:after,
+.container .wrap section.dashboard article .acc-book .acc-btn:after,
+.container .wrap section.dashboard article .calendar-wrap .acc-btn:after {
   display: none;
 }
-.container .wrap section.dashboard article .swiper-container .swiper-btn.swiper-button-prev {
+.container .wrap section.dashboard article .swiper-container .swiper-btn.swiper-button-prev,
+.container .wrap section.dashboard article .acc-book .swiper-btn.swiper-button-prev,
+.container .wrap section.dashboard article .calendar-wrap .swiper-btn.swiper-button-prev,
+.container .wrap section.dashboard article .swiper-container .acc-btn.swiper-button-prev,
+.container .wrap section.dashboard article .acc-book .acc-btn.swiper-button-prev,
+.container .wrap section.dashboard article .calendar-wrap .acc-btn.swiper-button-prev,
+.container .wrap section.dashboard article .swiper-container .swiper-btn.acc-prev,
+.container .wrap section.dashboard article .acc-book .swiper-btn.acc-prev,
+.container .wrap section.dashboard article .calendar-wrap .swiper-btn.acc-prev,
+.container .wrap section.dashboard article .swiper-container .acc-btn.acc-prev,
+.container .wrap section.dashboard article .acc-book .acc-btn.acc-prev,
+.container .wrap section.dashboard article .calendar-wrap .acc-btn.acc-prev {
   background-repeat: no-repeat;
   background-image: url('../img/member/btn_prev.svg');
   background-size: contain;
   right: 3rem;
 }
-.container .wrap section.dashboard article .swiper-container .swiper-btn.swiper-button-next {
+.container .wrap section.dashboard article .swiper-container .swiper-btn.swiper-button-next,
+.container .wrap section.dashboard article .acc-book .swiper-btn.swiper-button-next,
+.container .wrap section.dashboard article .calendar-wrap .swiper-btn.swiper-button-next,
+.container .wrap section.dashboard article .swiper-container .acc-btn.swiper-button-next,
+.container .wrap section.dashboard article .acc-book .acc-btn.swiper-button-next,
+.container .wrap section.dashboard article .calendar-wrap .acc-btn.swiper-button-next,
+.container .wrap section.dashboard article .swiper-container .swiper-btn.acc-next,
+.container .wrap section.dashboard article .acc-book .swiper-btn.acc-next,
+.container .wrap section.dashboard article .calendar-wrap .swiper-btn.acc-next,
+.container .wrap section.dashboard article .swiper-container .acc-btn.acc-next,
+.container .wrap section.dashboard article .acc-book .acc-btn.acc-next,
+.container .wrap section.dashboard article .calendar-wrap .acc-btn.acc-next {
   background-repeat: no-repeat;
   background-image: url('../img/member/btn_next.svg');
   background-size: contain;
@@ -1294,14 +1327,15 @@ img {
   letter-spacing: -0.125rem;
   margin-bottom: 0.875rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book {
   padding-top: 3.125rem;
   margin-top: -3.125rem;
+  position: relative;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont {
   background-color: #fff;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph {
   width: 28.75rem;
   height: 12.5rem;
   padding-top: 1.5625rem;
@@ -1313,58 +1347,58 @@ img {
   border-radius: 0.375rem;
   margin-bottom: 1.25rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph canvas {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph canvas {
   width: 9.375rem !important;
   height: 9.375rem !important;
   display: inline-block !important;
   vertical-align: middle;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend {
   display: inline-block;
   vertical-align: middle;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul {
   display: inline-block;
   vertical-align: top;
   margin-left: 2.5rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li {
   font-size: 0.8125rem;
   line-height: 1rem;
   color: #555;
   margin-bottom: 0.625rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li:last-child {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li:last-child {
   margin-bottom: 0rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li i {
   width: 0.5625rem;
   height: 0.5625rem;
   margin-right: 0.625rem;
   display: inline-block;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list1 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list1 i {
   background-color: #1A8A5C;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list2 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list2 i {
   background-color: #F7CC01;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list3 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list3 i {
   background-color: #FF9F79;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list4 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list4 i {
   background-color: #669DED;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list5 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list5 i {
   background-color: #FC91AD;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list6 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list6 i {
   background-color: #A99AEE;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul li.list7 i {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .graph .legend ul li.list7 i {
   background-color: #FFFFFF;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history {
   height: 27.5rem;
   border: 1px solid #EEEEEE;
   border-radius: 0.375rem;
@@ -1373,39 +1407,39 @@ img {
   overflow: auto;
   margin-bottom: 1.25rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history ul li p,
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history ul li table {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history ul li p,
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history ul li table {
   display: inline-block;
   vertical-align: top;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history ul li p,
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history ul li table tr td {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history ul li p,
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history ul li table tr td {
   font-size: 0.875rem;
   line-height: 1.0625rem;
   text-align: left;
   padding-bottom: 1.375rem;
   box-sizing: border-box;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history ul li p {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history ul li p {
   width: 5.625rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .history ul li table {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .history ul li table {
   width: 18.125rem;
   table-layout: fixed;
   border-collapse: collapse;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .expenses {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .expenses {
   background-color: #103831;
   border-radius: 0.375rem;
   height: 12.25rem;
   padding: 1.875rem;
   box-sizing: border-box;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .expenses table {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .expenses table {
   table-layout: fixed;
   border-collapse: collapse;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .expenses table tr td {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .expenses table tr td {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   letter-spacing: -0.0625rem;
@@ -1413,16 +1447,16 @@ img {
   padding-bottom: 1.25rem;
   box-sizing: border-box;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .expenses table tr td:nth-child(2) {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .expenses table tr td:nth-child(2) {
   text-align: right;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .expenses table tr td:nth-child(2) b {
+.container .wrap section.dashboard article.account-calendar .inner .acc-book .acc-cont .expenses table tr td:nth-child(2) b {
   font-size: 0.9375rem;
   line-height: 1.1875rem;
   font-weight: 600;
   margin-right: 0.3125rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list {
   border: 1px solid #eee;
   border-radius: 0.375rem;
   padding-top: 1.875rem;
@@ -1431,14 +1465,14 @@ img {
   padding-left: 1.875rem;
   box-sizing: border-box;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li {
   position: relative;
   margin-top: 0.3125rem;
   margin-right: 0rem;
   margin-bottom: 1.125rem;
   margin-left: 0rem;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li:before {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li:before {
   content: '';
   display: block;
   width: 1.0625rem;
@@ -1453,7 +1487,7 @@ img {
   box-sizing: border-box;
   z-index: 1;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li:after {
   content: '';
   display: block;
   width: 0.5625rem;
@@ -1467,39 +1501,35 @@ img {
   box-sizing: border-box;
   z-index: 2;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-a:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-a:after {
   background-color: #FAB856;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-b:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-b:after {
   background-color: #6F95F2;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-c:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-c:after {
   background-color: #96C15A;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-d:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-d:after {
   background-color: #FEA4AE;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-e:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-e:after {
   background-color: #63D0F2;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-f:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-f:after {
   background-color: #FD6D6D;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-g:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-g:after {
   background-color: #F4DD60;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-h:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-h:after {
   background-color: #BBA4FE;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-i:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-i:after {
   background-color: #517B58;
 }
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container .swiper-slide .schedule .sch-list .ul-list li.pet-j:after {
+.container .wrap section.dashboard article.account-calendar .inner .schedule .sch-list .ul-list li.pet-j:after {
   background-color: #B98231;
-}
-.container .wrap section.dashboard article.account-calendar .inner .swiper-container.swiper3 {
-  padding-top: 37.8125rem;
-  margin-top: -37.8125rem;
 }
 .container .wrap section.dashboard article.hosp-info .inner .cell {
   border: 1px solid #eee;
@@ -1983,20 +2013,20 @@ img {
 .container .wrap section.dashboard.aside-open article.inoculation .inner .cont .list-cont .list-box .list-box-inner {
   width: 39.0625rem;
 }
-.container .wrap section.dashboard.aside-open article.account-calendar .inner .swiper-container .swiper-slide .graph {
+.container .wrap section.dashboard.aside-open article.account-calendar .inner .acc-book .acc-cont .graph {
   width: 25.9375rem;
   padding-top: 1.5625rem;
   padding-right: 2rem;
   padding-bottom: 1.5625rem;
   padding-left: 2rem;
 }
-.container .wrap section.dashboard.aside-open article.account-calendar .inner .swiper-container .swiper-slide .graph .legend ul {
+.container .wrap section.dashboard.aside-open article.account-calendar .inner .acc-book .acc-cont .graph .legend ul {
   margin-left: 1.875rem;
 }
-.container .wrap section.dashboard.aside-open article.account-calendar .inner .swiper-container .swiper-slide .history {
+.container .wrap section.dashboard.aside-open article.account-calendar .inner .acc-book .acc-cont .history {
   padding-right: 0.625rem;
 }
-.container .wrap section.dashboard.aside-open article.account-calendar .inner .swiper-container .swiper-slide .history ul li table {
+.container .wrap section.dashboard.aside-open article.account-calendar .inner .acc-book .acc-cont .history ul li table {
   width: 16.5625rem;
 }
 .container .wrap section.dashboard[data-page='1'] .noti-evt,
@@ -2069,28 +2099,6 @@ img {
   position: relative;
   margin-top: 1.25rem;
 }
-.calendar-wrap .month-change {
-  width: 1.75rem;
-  height: 1.75rem;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  right: 0rem;
-  top: -3.625rem;
-  left: auto;
-  bottom: auto;
-}
-.calendar-wrap .month-change.prev {
-  background-repeat: no-repeat;
-  background-image: url('../img/member/btn_prev.png');
-  background-size: contain;
-  right: 2.375rem;
-}
-.calendar-wrap .month-change.next {
-  background-repeat: no-repeat;
-  background-image: url('../img/member/btn_next.png');
-  background-size: contain;
-}
 .calendar-wrap table {
   width: 100%;
   table-layout: fixed;
@@ -2123,6 +2131,9 @@ img {
   display: inline-block;
   z-index: 1;
   position: relative;
+}
+.calendar-wrap.calendar-wrap1 .acc-btn {
+  margin-top: -3.75rem !important;
 }
 .calendar-wrap.calendar-wrap1 table tr td div i.price {
   width: 100%;
@@ -2158,27 +2169,8 @@ img {
   position: relative;
   z-index: 2;
 }
-.calendar-wrap.calendar-wrap2 .month-change {
-  width: 2.25rem;
-  height: 2.25rem;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  right: 0rem;
-  top: -3.125rem;
-  left: auto;
-  bottom: auto;
-}
-.calendar-wrap.calendar-wrap2 .month-change.prev {
-  background-repeat: no-repeat;
-  background-image: url('../img/member/btn_prev.svg');
-  background-size: contain;
-  right: 3rem;
-}
-.calendar-wrap.calendar-wrap2 .month-change.next {
-  background-repeat: no-repeat;
-  background-image: url('../img/member/btn_next.svg');
-  background-size: contain;
+.calendar-wrap.calendar-wrap2 .acc-btn {
+  margin-top: -3.125rem !important;
 }
 .calendar-wrap.calendar-wrap2 table th,
 .calendar-wrap.calendar-wrap2 table td {

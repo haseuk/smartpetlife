@@ -1,15 +1,15 @@
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="50" height="50" rx="4" fill="#092E27"/>
-<mask id="mask0_1149_16093" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24" height="24">
-<rect x="13" y="13" width="24" height="24" fill="white"/>
+<svg width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="95" height="95" rx="4" fill="#092E27"/>
+<mask id="mask0_1166_15359" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="34" y="34" width="28" height="28">
+<rect x="34" y="34" width="28" height="28" fill="white"/>
 </mask>
-<g mask="url(#mask0_1149_16093)">
-<mask id="mask1_1149_16093" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="15" width="20" height="20">
-<rect x="15" y="15" width="20" height="20" fill="#C4C4C4"/>
+<g mask="url(#mask0_1166_15359)">
+<mask id="mask1_1166_15359" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="36" y="36" width="24" height="24">
+<rect x="36.3359" y="36.3359" width="23.3333" height="23.3333" fill="#C4C4C4"/>
 </mask>
-<g mask="url(#mask1_1149_16093)">
-<line x1="21.6946" y1="21.0469" x2="28.9856" y2="28.3379" stroke="#FFA41C" stroke-width="0.8" stroke-linecap="round"/>
-<path d="M18.5657 19.1863C18.6581 18.8413 18.9277 18.5717 19.2728 18.4792L26.7434 16.4775C27.0885 16.385 27.4567 16.4837 27.7093 16.7363L33.1782 22.2052C33.4309 22.4578 33.5295 22.826 33.4371 23.1711L31.4353 30.6418C31.3428 30.9869 31.0733 31.2564 30.7282 31.3489L23.2575 33.3506C22.9124 33.4431 22.5442 33.3444 22.2916 33.0918L16.8227 27.6229C16.5701 27.3703 16.4714 27.0021 16.5639 26.657L18.5657 19.1863Z" stroke="white" stroke-width="0.8"/>
+<g mask="url(#mask1_1166_15359)">
+<line x1="44.0501" y1="43.3906" x2="52.6506" y2="51.9911" stroke="#FFA41C" stroke-width="0.8" stroke-linecap="round"/>
+<path d="M40.5195 41.131C40.6119 40.7859 40.8815 40.5163 41.2266 40.4239L50.1282 38.0387C50.4733 37.9462 50.8415 38.0449 51.0942 38.2975L57.6106 44.814C57.8632 45.0666 57.9619 45.4348 57.8694 45.7799L55.4842 54.6815C55.3918 55.0266 55.1222 55.2962 54.7771 55.3886L45.8755 57.7738C45.5304 57.8663 45.1622 57.7676 44.9096 57.515L38.3931 50.9985C38.1405 50.7459 38.0418 50.3777 38.1343 50.0326L40.5195 41.131Z" stroke="white" stroke-width="0.8"/>
 </g>
 </g>
 </svg>

@@ -63,7 +63,7 @@
           </a>
         </div>
         <div class="note">
-          <h3>펫 건강노트</h3>
+          <h3>반려동물 건강노트</h3>
           <p class="sub">등록된 펫 건강을 확인하세요.</p>
           <div class="view">
             <ul>
@@ -177,7 +177,7 @@
       <article class="arti-cont inoculation">
         <div class="inner">
           <h3>접종정보</h3>
-          <div class="cont" data-view="1">
+          <div class="cont cont-view1" data-view="1">
             <div class="profile-img">
               <img src="img/member/img_profile.png" alt="">
             </div>
@@ -277,7 +277,7 @@
               </div>
             </div>
 
-            <!-- ##### 접종정보-->
+            <!-- ##### 진료비내역-->
             <div class="list-cont list2">
               <div class="select">
                 <select class="cal1-select">
@@ -313,6 +313,9 @@
                   <tbody class="month1"></tbody>
                 </table>
               </div>
+              <div class="total">
+                <p>이번달 총 지출내역 <i><span>850,000</span> 원</i></p>
+              </div>
             </div>
 
             <!-- ##### 진료기록-->
@@ -339,10 +342,6 @@
                 <p>등록된 자료가 없습니다.<br> 영수증 또는 진료보관서를 스캔하여 자료를 등록해 주세요.</p>
               </div>
             </div>
-          </div>
-
-          <div class="total">
-            <p>이번달 총 지출내역 <i><span>850,000</span> 원</i></p>
           </div>
         </div>
       </article>
@@ -1563,7 +1562,7 @@
         asideOpen();
       } else {
         popup.classList.add('p-open', 'pet-pop-open');
-        asideOpen();
+        asideOpen();  
       }
     })
   });

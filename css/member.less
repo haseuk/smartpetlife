@@ -69,12 +69,12 @@ img { image-rendering:auto; backface-visibility:hidden; }
           .dir-btns { .abs; .lt(20,560);
             li {
               a { .wh(50,50); .ib; .mb(10); .pointer;
-                &.list1 { .contain('../img/member/btn_01.svg'); }
-                &.list2 { .contain('../img/member/btn_02.svg'); }
-                &.list3 { .contain('../img/member/btn_03.svg'); }
-                &.list4 { .contain('../img/member/btn_04.svg'); }
-                &.list5 { .contain('../img/member/btn_05.svg'); }
-                &.list6 { .contain('../img/member/btn_06.svg'); }
+                &.list1 { .contain('../img/member/btn_01-def.svg'); }
+                &.list2 { .contain('../img/member/btn_02-def.svg'); }
+                &.list3 { .contain('../img/member/btn_03-def.svg'); }
+                &.list4 { .contain('../img/member/btn_04-def.svg'); }
+                &.list5 { .contain('../img/member/btn_05-def.svg'); }
+                &.list6 { .contain('../img/member/btn_06-def.svg'); }
               }
             }
           }
@@ -94,7 +94,7 @@ img { image-rendering:auto; backface-visibility:hidden; }
               .thumb { .wh(46,46); overflow: hidden; .br(50%); .rel; .ib; .mr(15); .vat;
                 img { .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
               }
-              .txt-wrap { .w(295); .ib; .vat;
+              .txt-wrap { .w(280); .ib; .vat;
                 .tit, .txt { .fs(14); .lh(17); .ls(-1);  }
                 .txt { color:#AAA; .mt(6); }
               }
@@ -273,10 +273,10 @@ img { image-rendering:auto; backface-visibility:hidden; }
                     }
                   }
                   &.list3 { .tl;
-                    ul { .tc;
-                      li { .wh(190,190); .ib; .vat; .mr(15); .rel; overflow: hidden;
-                        &:last-child { .mr(0); }
-                        p { .fs(14); color:#fff; .ls(-0.05em); .wh(100%,38); .lh(38); background: rgba(17,17,17,0.5); .abs; .lb; .pl(14); .-box; .br-b(4); .pl(0); }
+                    ul { .tl; .w(600); .mh-c;
+                      li { .wh(190,190); .ib; .vat; .m(0,15,15,0); .rel; overflow: hidden;
+                        &:nth-child(3n) { .mr(0); }
+                        p { .fs(14); color:#fff; .tc; .ls(-0.05em); .wh(100%,38); .lh(38); background: rgba(17,17,17,0.5); .abs; .lb; .pl(14); .-box; .br-b(4); .pl(0); }
                       }
                     }
                     span { .fs(14); .lh(17); font-weight: 500; color:#555; .ib; .mt(20); }
@@ -295,9 +295,6 @@ img { image-rendering:auto; backface-visibility:hidden; }
                 &[data-view='3'] .list3 { .ib; }
                 &.cont-view1 { overflow: auto; overflow-x: hidden; }
               }
-
-              //[data-view='2'] { .br-t(6); }
-              //[data-view='2'] + .total { .ib; }
             }
           }
 
@@ -510,12 +507,18 @@ img { image-rendering:auto; backface-visibility:hidden; }
               li { .mr(10); .w(95); .ib; .vat;
                 &:last-child { .mr(0); }
                 a { .wh(95,95); .rel;
-                  &.list1a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_hosp-on.svg'); }
-                  &.list2a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_pharmacy-on.svg'); }
-                  &.list3a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_recomm-on.svg'); }
-                  &.list4a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_medicalcost-on.svg'); }
-                  &.list5a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_vaccincost-on.svg'); }
-                  &.list6a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_checkup-on.svg'); }
+                  &.list1 { .contain('../img/member/btn_01.svg'); }
+                  &.list2 { .contain('../img/member/btn_02.svg'); }
+                  &.list3 { .contain('../img/member/btn_03.svg'); }
+                  &.list4 { .contain('../img/member/btn_04.svg'); }
+                  &.list5 { .contain('../img/member/btn_05.svg'); }
+                  &.list6 { .contain('../img/member/btn_06.svg'); }
+                  //&.list1a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_hosp-on.svg'); }
+                  //&.list2a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_pharmacy-on.svg'); }
+                  //&.list3a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_recomm-on.svg'); }
+                  //&.list4a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_medicalcost-on.svg'); }
+                  //&.list5a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_vaccincost-on.svg'); }
+                  //&.list6a:after { .cnt; .wh(28); .abs; .lt(50%,50%); transform:translate(-50%,-50%); .contain('../img/member/ic_checkup-on.svg'); }
                 }
               }
             }
@@ -649,9 +652,9 @@ img { image-rendering:auto; backface-visibility:hidden; }
           &:after { .cnt; .bgc(#103831); .wh(52,52); .abs; .lt(50%,50%); transform: translate(-50%,-50%); .br(50%); z-index: -1; }
           span { color:#fff; }
         }
-        div { overflow: hidden;
+        div { overflow: hidden; .abs; .lt;
           span { .ib; .abs; .lt(50%,50%); transform: translate(-50%,-50%); .h(17); .lh(17); }
-          i { .wh(9,9); .br(50%); .ib; .m(0,2,0);
+          i { .wh(9,9); .br(50%); .ib; .m(66,2,0);
             &.pet-a { .bgc(#FAB856); }
             &.pet-b { .bgc(#6F95F2); }
             &.pet-c { .bgc(#96C15A); }

@@ -279,32 +279,32 @@ img {
 }
 .container .wrap section.dashboard aside .dir-btns li a.list1 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/btn_01.svg');
+  background-image: url('../img/member/btn_01-def.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard aside .dir-btns li a.list2 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/btn_02.svg');
+  background-image: url('../img/member/btn_02-def.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard aside .dir-btns li a.list3 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/btn_03.svg');
+  background-image: url('../img/member/btn_03-def.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard aside .dir-btns li a.list4 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/btn_04.svg');
+  background-image: url('../img/member/btn_04-def.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard aside .dir-btns li a.list5 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/btn_05.svg');
+  background-image: url('../img/member/btn_05-def.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard aside .dir-btns li a.list6 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/btn_06.svg');
+  background-image: url('../img/member/btn_06-def.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard aside .switch {
@@ -395,7 +395,7 @@ img {
   transform: translate(-50%, -50%);
 }
 .container .wrap section.dashboard article .ul-list li .txt-wrap {
-  width: 18.4375rem;
+  width: 17.5rem;
   display: inline-block;
   vertical-align: top;
 }
@@ -1048,23 +1048,30 @@ img {
   text-align: left;
 }
 .container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul {
-  text-align: center;
+  text-align: left;
+  width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li {
   width: 11.875rem;
   height: 11.875rem;
   display: inline-block;
   vertical-align: top;
+  margin-top: 0rem;
   margin-right: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  margin-left: 0rem;
   position: relative;
   overflow: hidden;
 }
-.container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li:last-child {
+.container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li:nth-child(3n) {
   margin-right: 0rem;
 }
 .container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li p {
   font-size: 0.875rem;
   color: #fff;
+  text-align: center;
   letter-spacing: -0.05em;
   width: 100%;
   height: 2.375rem;
@@ -1870,94 +1877,34 @@ img {
   height: 5.9375rem;
   position: relative;
 }
-.container .wrap section.dashboard.aside-open aside .dir-btns li a.list1a:after {
-  content: '';
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
+.container .wrap section.dashboard.aside-open aside .dir-btns li a.list1 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/ic_hosp-on.svg');
+  background-image: url('../img/member/btn_01.svg');
   background-size: contain;
 }
-.container .wrap section.dashboard.aside-open aside .dir-btns li a.list2a:after {
-  content: '';
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
+.container .wrap section.dashboard.aside-open aside .dir-btns li a.list2 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/ic_pharmacy-on.svg');
+  background-image: url('../img/member/btn_02.svg');
   background-size: contain;
 }
-.container .wrap section.dashboard.aside-open aside .dir-btns li a.list3a:after {
-  content: '';
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
+.container .wrap section.dashboard.aside-open aside .dir-btns li a.list3 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/ic_recomm-on.svg');
+  background-image: url('../img/member/btn_03.svg');
   background-size: contain;
 }
-.container .wrap section.dashboard.aside-open aside .dir-btns li a.list4a:after {
-  content: '';
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
+.container .wrap section.dashboard.aside-open aside .dir-btns li a.list4 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/ic_medicalcost-on.svg');
+  background-image: url('../img/member/btn_04.svg');
   background-size: contain;
 }
-.container .wrap section.dashboard.aside-open aside .dir-btns li a.list5a:after {
-  content: '';
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
+.container .wrap section.dashboard.aside-open aside .dir-btns li a.list5 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/ic_vaccincost-on.svg');
+  background-image: url('../img/member/btn_05.svg');
   background-size: contain;
 }
-.container .wrap section.dashboard.aside-open aside .dir-btns li a.list6a:after {
-  content: '';
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
+.container .wrap section.dashboard.aside-open aside .dir-btns li a.list6 {
   background-repeat: no-repeat;
-  background-image: url('../img/member/ic_checkup-on.svg');
+  background-image: url('../img/member/btn_06.svg');
   background-size: contain;
 }
 .container .wrap section.dashboard.aside-open aside .switch {
@@ -2215,6 +2162,11 @@ img {
 }
 .calendar-wrap.calendar-wrap2 table td div {
   overflow: hidden;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
 }
 .calendar-wrap.calendar-wrap2 table td div span {
   display: inline-block;
@@ -2232,7 +2184,7 @@ img {
   height: 0.5625rem;
   border-radius: 50%;
   display: inline-block;
-  margin-top: 0rem;
+  margin-top: 4.125rem;
   margin-right: 0.125rem;
   margin-bottom: 0rem;
   margin-left: 0.125rem;

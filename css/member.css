@@ -2973,8 +2973,11 @@ ul li.pharm .inf .t i {
   margin-left: 0.625rem;
 }
 .popup .inner .detail-pop-inner .de-wrap {
+  width: 18.75rem;
   height: 28.75rem;
   overflow: auto;
+  padding-right: 0.9375rem;
+  box-sizing: border-box;
 }
 .popup .inner .detail-pop-inner .sub-tit {
   font-size: 0.875rem;
@@ -3021,7 +3024,7 @@ ul li.pharm .inf .t i {
 }
 .popup .inner .detail-pop-inner .notice {
   font-size: 0.8125rem;
-  line-height: 1rem;
+  line-height: 1.375rem;
   font-weight: 500;
   color: #999;
   letter-spacing: -1%;

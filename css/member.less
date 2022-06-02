@@ -44,7 +44,7 @@ img { image-rendering:auto; backface-visibility:hidden; }
       &.dashboard { .w(1920); .clear; .min-h(1080); height:calc(100vh - 15px);
         aside, article { .fl; .hf; }
         aside { .bgc(#103831); .w(90); .p(30,0,60); .-box; color:#fff; .rel; .tl;
-          h1 { .wh(38,38); .contain('../img/member/logo.svg'); .ml(30);
+          h1 { .wh(38,38); .contain('../img/member/logo.svg'); .ml(26);
             a { .f; }
           }
           .dir-shop, .my-pet p { .fs(14); .semi-bold; .lh(17); .ls(-0.05em); }
@@ -273,8 +273,9 @@ img { image-rendering:auto; backface-visibility:hidden; }
                     }
                   }
                   &.list3 { .tl;
-                    ul { .tl; .w(600); .mh-c;
-                      li { .wh(190,190); .ib; .vat; .m(0,15,15,0); .rel; overflow: hidden;
+                    ul { .tl;
+                      li { .wh(220,220); .ib; .vat; .m(0,10,10,0); .rel; overflow: hidden;
+                        img { .f; }
                         &:nth-child(3n) { .mr(0); }
                         p { .fs(14); color:#fff; .tc; .ls(-0.05em); .wh(100%,38); .lh(38); background: rgba(17,17,17,0.5); .abs; .lb; .pl(14); .-box; .br-b(4); .pl(0); }
                       }
@@ -466,6 +467,10 @@ img { image-rendering:auto; backface-visibility:hidden; }
                         .star { .fs(30); .lh(30); .ls(0.1em); color:#EEEEEE; .rel; overflow: hidden; .mt(10); .ib;
                           input { .f; .abs; .l(0); opacity: 0; .pointer; }
                           span { .w(0); .abs; .l(0); color:#FFBE1C; overflow: hidden; pointer-events: none; }
+                          &.one s:nth-child(1) { color:#FFBE1C; }
+                          &.two s:nth-child(-n+2) { color:#FFBE1C; }
+                          &.three s:nth-child(-n+3) { color:#FFBE1C; }
+                          &.four s:nth-child(-n+4) { color:#FFBE1C; }
                         }
                         .num { .mt(6); .pb(20);
                           i { .fs(10); .lh(12); color:#ccc; .ib; .w(32); .tc; }
@@ -555,6 +560,9 @@ img { image-rendering:auto; backface-visibility:hidden; }
               .inner .cont .list-cont {
                 .list-box .list-box-inner { .w(625); }
                 &.list2 .total { .w(680); }
+                &.list3 ul li { .wh(190); .m(0,15,15,0);
+                  &:nth-child(3n) { .mr(0); }
+                }
               }
             }
             &.account-calendar {
@@ -715,7 +723,7 @@ ul {
 .popup { .abs; .f; .lt; z-index: 100; .hide;
   .dim { .fix; .lt; .f; .bgc(#000); opacity: 0.5; }
   .inner { .abs; .lt(50%,50%); transform: translate(-50%,-50%); z-index: 10; .bgc(#fff); .br(6); .w(360); .tl; color:#333;
-    .tit { .fs(16); .lh(19); .ls(-0.05em); .mb(30); }
+    .tit { .fs(16); .lh(19); .ls(-0.05em); .mb(20); }
     .close { .fs(0); .wh(48,48); .abs; .rt; .ib; .pointer;
       &:after { .cnt; .wh(18,18); .contain('../img/member/btn_close.svg'); .abs; .lb; pointer-events: none; }
     }
@@ -787,6 +795,12 @@ ul {
             &:after { .contain('../img/member/pop_btn_next.svg'); }
           }
         }
+        &.non-li {
+          .swiper-slide { .pt(50);
+            p { .fs(15); .lh(18); color:#bbb; .ls(-0.03em); .tc; }
+          }
+          .swiper-pop-btn { .hide; }
+        }
       }
     }
     .pet-select-inner { .wh(360,500); .p(30); .-box; .wf; .hide;
@@ -844,18 +858,22 @@ ul {
       }
     }
 
-    .detail-pop-inner { .p(30); .-box; .hide; .min-h(660);
+    .detail-pop-inner { .p(30); .-box; .hide;
       .t-txt { .fs(24); .lh(29); .ls(-0.04em); .light; .mb(12);
         b { .semi-bold; }
       }
       .noti { .fs(13); .lh(18); .ls(-0.05em); color:#FA5353; .ti(-10); .ml(10); }
+      .de-wrap { .h(460); overflow: auto; }
       .sub-tit { .fs(14); .lh(17); .clear; font-weight: 500; .block;
         .price { .fs(15); .lh(18); .fr; }
-        &.total { .pb(20); .-b(#eee); .mt(30); }
+        &.total { .pb(20); .-b(#eee); .mt(30);
+          .price { .fs(18); .bold; .ls(-4%); }
+        }
       }
-      ul { .mt(10); .h(350); overflow: auto;
+      ul { .m(10,0,40);
         li { .p(10,0); .-box; }
       }
+      .notice { .fs(13); .lh(16); font-weight: 500; color:#999; .ls(-1%); .tl; }
     }
   }
   &.p-open { .ib;

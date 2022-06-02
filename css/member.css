@@ -182,7 +182,7 @@ img {
   background-repeat: no-repeat;
   background-image: url('../img/member/logo.svg');
   background-size: contain;
-  margin-left: 1.875rem;
+  margin-left: 1.625rem;
 }
 .container .wrap section.dashboard aside h1 a {
   width: 100%;
@@ -1049,21 +1049,22 @@ img {
 }
 .container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul {
   text-align: left;
-  width: 37.5rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 .container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li {
-  width: 11.875rem;
-  height: 11.875rem;
+  width: 13.75rem;
+  height: 13.75rem;
   display: inline-block;
   vertical-align: top;
   margin-top: 0rem;
-  margin-right: 0.9375rem;
-  margin-bottom: 0.9375rem;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
   margin-left: 0rem;
   position: relative;
   overflow: hidden;
+}
+.container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li img {
+  width: 100%;
+  height: 100%;
 }
 .container .wrap section.dashboard article.inoculation .inner .cont .list-cont.list3 ul li:nth-child(3n) {
   margin-right: 0rem;
@@ -1749,6 +1750,18 @@ img {
   overflow: hidden;
   pointer-events: none;
 }
+.container .wrap section.dashboard article.hosp-info .inner.inner2 .cell .review .review-cont .review-inner .star.one s:nth-child(1) {
+  color: #FFBE1C;
+}
+.container .wrap section.dashboard article.hosp-info .inner.inner2 .cell .review .review-cont .review-inner .star.two s:nth-child(-n+2) {
+  color: #FFBE1C;
+}
+.container .wrap section.dashboard article.hosp-info .inner.inner2 .cell .review .review-cont .review-inner .star.three s:nth-child(-n+3) {
+  color: #FFBE1C;
+}
+.container .wrap section.dashboard article.hosp-info .inner.inner2 .cell .review .review-cont .review-inner .star.four s:nth-child(-n+4) {
+  color: #FFBE1C;
+}
 .container .wrap section.dashboard article.hosp-info .inner.inner2 .cell .review .review-cont .review-inner .num {
   margin-top: 0.375rem;
   padding-bottom: 1.25rem;
@@ -1960,6 +1973,17 @@ img {
 }
 .container .wrap section.dashboard.aside-open article.inoculation .inner .cont .list-cont.list2 .total {
   width: 42.5rem;
+}
+.container .wrap section.dashboard.aside-open article.inoculation .inner .cont .list-cont.list3 ul li {
+  width: 11.875rem;
+  height: 11.875rem;
+  margin-top: 0rem;
+  margin-right: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  margin-left: 0rem;
+}
+.container .wrap section.dashboard.aside-open article.inoculation .inner .cont .list-cont.list3 ul li:nth-child(3n) {
+  margin-right: 0rem;
 }
 .container .wrap section.dashboard.aside-open article.account-calendar .inner .acc-book .acc-cont .graph {
   width: 25.9375rem;
@@ -2371,7 +2395,7 @@ ul li.pharm .inf .t i {
   font-size: 1rem;
   line-height: 1.1875rem;
   letter-spacing: -0.05em;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.25rem;
 }
 .popup .inner .close {
   font-size: 0rem;
@@ -2667,6 +2691,19 @@ ul li.pharm .inf .t i {
   background-image: url('../img/member/pop_btn_next.svg');
   background-size: contain;
 }
+.popup .inner .pos-inner .swiper-pop.non-li .swiper-slide {
+  padding-top: 3.125rem;
+}
+.popup .inner .pos-inner .swiper-pop.non-li .swiper-slide p {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #bbb;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.popup .inner .pos-inner .swiper-pop.non-li .swiper-pop-btn {
+  display: none;
+}
 .popup .inner .pet-select-inner {
   width: 22.5rem;
   height: 31.25rem;
@@ -2916,7 +2953,6 @@ ul li.pharm .inf .t i {
   padding: 1.875rem;
   box-sizing: border-box;
   display: none;
-  min-height: 41.25rem;
 }
 .popup .inner .detail-pop-inner .t-txt {
   font-size: 1.5rem;
@@ -2935,6 +2971,10 @@ ul li.pharm .inf .t i {
   color: #FA5353;
   text-indent: -0.625rem;
   margin-left: 0.625rem;
+}
+.popup .inner .detail-pop-inner .de-wrap {
+  height: 28.75rem;
+  overflow: auto;
 }
 .popup .inner .detail-pop-inner .sub-tit {
   font-size: 0.875rem;
@@ -2961,10 +3001,16 @@ ul li.pharm .inf .t i {
   border-bottom: 1px solid #eee;
   margin-top: 1.875rem;
 }
+.popup .inner .detail-pop-inner .sub-tit.total .price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -4%;
+}
 .popup .inner .detail-pop-inner ul {
   margin-top: 0.625rem;
-  height: 21.875rem;
-  overflow: auto;
+  margin-right: 0rem;
+  margin-bottom: 2.5rem;
+  margin-left: 0rem;
 }
 .popup .inner .detail-pop-inner ul li {
   padding-top: 0.625rem;
@@ -2972,6 +3018,14 @@ ul li.pharm .inf .t i {
   padding-bottom: 0.625rem;
   padding-left: 0rem;
   box-sizing: border-box;
+}
+.popup .inner .detail-pop-inner .notice {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #999;
+  letter-spacing: -1%;
+  text-align: left;
 }
 .popup.p-open {
   display: inline-block;

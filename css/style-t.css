@@ -163,7 +163,7 @@
     margin-bottom: 6.51041667vw;
   }
   .container .wrap section article.top .app-stores {
-    margin-bottom: 4.55729167vw;
+    margin-bottom: 8.72395833vw;
   }
   .container .wrap section article.top .app-stores a.ios {
     background-repeat: no-repeat;
@@ -176,8 +176,8 @@
     background-size: contain;
   }
   .container .wrap section article.top .visual {
-    width: 61.71875vw;
-    height: 85.02604167vw;
+    width: 61.97916667vw;
+    height: 75.91145833vw;
     display: inline-block;
     background-repeat: no-repeat;
     background-image: url('../img/t/img_mockup_sec1.png');
@@ -313,25 +313,25 @@
     background-repeat: no-repeat;
     background-image: url('../img/t/arti2-1.png');
     background-size: contain;
-    height: 53.125vw;
+    height: 69.01041667vw;
   }
   .container .wrap section article.manage .gather-img .img-box span.img2 {
     background-repeat: no-repeat;
     background-image: url('../img/t/arti2-2.png');
     background-size: contain;
-    height: 13.15104167vw;
+    height: 17.31770833vw;
   }
   .container .wrap section article.manage .gather-img .img-box span.img3 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti1-3.png');
+    background-image: url('../img/t/arti2-3.png');
     background-size: contain;
-    height: 27.99479167vw;
+    height: 22.78645833vw;
   }
   .container .wrap section article.manage .gather-img .img-box span.img4 {
     background-repeat: no-repeat;
     background-image: url('../img/t/arti2-4.png');
     background-size: contain;
-    height: 58.07291667vw;
+    height: 53.38541667vw;
   }
   .container .wrap section article.compare .gather-img .img-box {
     vertical-align: middle;
@@ -354,19 +354,23 @@
     background-repeat: no-repeat;
     background-image: url('../img/t/arti3-2.png');
     background-size: contain;
-    width: 41.66666667vw;
-    height: 35.28645833vw;
+    width: 40.625vw;
+    height: 38.02083333vw;
+    margin-top: 1.30208333vw;
+    margin-right: 0vw;
+    margin-bottom: 0vw;
+    margin-left: 0vw;
   }
   .container .wrap section article.compare .gather-img .img-box span.img3 {
     background-repeat: no-repeat;
     background-image: url('../img/t/arti3-3.png');
     background-size: contain;
-    width: 41.66666667vw;
-    height: 35.28645833vw;
-    margin-top: -2.60416667vw;
+    width: 40.625vw;
+    height: 38.02083333vw;
+    margin-top: -1.30208333vw;
     margin-right: 0vw;
     margin-bottom: 0vw;
-    margin-left: -13.02083333vw;
+    margin-left: -10.41666667vw;
   }
   .container .wrap section article.app {
     width: 100vw;

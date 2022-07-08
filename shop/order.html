@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMART PET LIFE SHOP</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/shop-mo.css">
+  <link rel="stylesheet" href="../css/shop-t.css">
+  <link rel="stylesheet" href="../css/shop-pc.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- ########## 주문하기 클릭 하면 order-complete 클래스가 wrap 태그에 생성 됨-->
+    <!-- ########## 121번줄에 order-result에서 주문 상태에 따라 화면이 바뀜-->
+    <div class="wrap">
+      <header>
+        <div class="h-inner">
+          <h1><a href="">SMART PET LIFE</a></h1>
+          <p class="my-point">P182,900</p>
+          <a class="menu">메뉴</a>
+        </div>
+        <div class="menu-list">
+          <a href="main.html" class="menu-item">Home</a>
+          <a href="shop.html" class="menu-item">Shop</a>
+          <a href="cart.html" class="menu-item">Cart</a>
+          <a href="myOrder.html" class="menu-item">My Order</a>
+        </div>
+      </header>
+
+
+
+      <section class="cart order">
+        <h3>Order</h3>
+        <article class="selects-prd">
+          <div class="cart-t">
+            <p>주문상품 정보</p>
+          </div>
+          <div class="cart-cnt">
+            <ul>
+              <li>
+                <div class="prd">
+                  <img src="images/mo/cart1.png" alt="">
+                </div>
+                <div class="prd-info">
+                  <p class="nm">Pepe Collar</p>
+                  <p class="price-box"><span class="price">₩10,000</span><span class="ds">₩8,000</span></p>
+                  <p class="poi">P8,000</p>
+                </div>
+                <div class="quantity">
+                  <p>Quantity</p>
+                  <div class="num-wrap">
+                    <span class="up"></span>
+                    <span class="down"></span>
+                    <input type="number" min="0" value="1">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="orderer">
+          <p class="tit">주문자 정보</p>
+          <p class="sub-tit">주문자</p>
+          <input type="text" placeholder="주문자의 성함을 입력해주세요.">
+          <p class="sub-tit">연락처</p>
+          <input type="text" placeholder="‘-’없이 입력해주세요.">
+          <p class="sub-tit">이메일(선택)</p>
+          <input type="text" placeholder="이메일을 입력해주세요.">
+
+          <p class="tit">배송정보</p>
+          <p class="sub-tit">받으시는 분</p>
+          <input type="text" placeholder="받으시는 분의 성함을 입력해주세요.">
+          <p class="sub-tit">연락처</p>
+          <input type="text" placeholder="‘-’없이 입력해주세요.">
+          <div class="add">
+            <p class="sub-tit">주소지</p>
+            <input type="text" name="address" id="address">
+            <input type="button" value="우편번호 검색" onclick="kakaopost();">
+            <input type="text" placeholder="상세주소를 입력해주세요.">
+          </div>
+          <p class="sub-tit">이메일(선택)</p>
+          <input type="text" placeholder="이메일을 입력해주세요.">
+
+          <p class="tit">포인트</p>
+          <p class="sub-tit">포인트 적용</p>
+          <div class="po-box">
+            <input type="text" placeholder="0">
+            <a class="use-all">모두 사용</a>
+            <p class="user-point">보유 포인트 : <span>P20,000</span></p>
+          </div>
+
+          <p class="tit">결제 수단</p>
+          <div class="pay-wrap">
+            <label>
+              <input type="radio" name="pay">
+              <i></i>
+              <s>신용카드 결제</s>
+            </label>
+            <label>
+              <input type="radio" name="pay">
+              <i></i>
+              <s class="payco">페이코</s>
+            </label>
+            <label>
+              <input type="radio" name="pay">
+              <i></i>
+              <s class="kpay">카카오페이</s>
+            </label>
+            <label>
+              <input type="radio" name="pay">
+              <i></i>
+              <s class="npay">네이버페이</s>
+            </label>
+          </div>
+
+          <a class="buy-btn">주문하기</a>
+        </article>
+      </section>
+
+
+      <!-- ########## 주문 결과 화면-->
+      <section class="order-result">
+        <!-- ########## result-cnt 클래스에 normal-order 클래스면 주문완료-->
+        <!-- ########## result-cnt 클래스에 abnormal 클래스면 주문실패-->
+        <div class="result-cnt normal-order">
+          <span></span>
+          <p class="txt">고객님의 주문이 <b></b></p>
+          <p class="sub-txt">이용에 불편을 드려 죄송합니다.<br> 다시 한 번 시도해 주시기 바랍니다.</p>
+          <a href="main.html" class="main-go">메인으로 이동</a>
+        </div>
+      </section>
+
+
+      <footer>
+        <div class="inner">
+          <h1>the BLEND</h1>
+          <div class="terms">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Term</a>
+          </div>
+          <div class="co-info">
+            사업자명 : (주)더블렌드<br class="w-und"><i> / </i>
+            대표자 : 연제창<br class="w-und"><i> / </i>
+            주소 : 서울특별시 강남구 도곡로 138,<br class="mo">
+            미래2빌딩 2층(도곡동)<br>
+            사업자등록번호 : 361-86-02120<br class="w-und"><i> / </i>
+            통신판매업신고번호 : 제2021-서울강남-02089
+          </div>
+          <p class="copy">Copyright Ⓒ 2022 theBLEND ALL<br class="mo"> rights reserved.</p>
+          <div class="sns">
+            <a href="#" class="inst">인스타그램</a>
+            <a href="#" class="fb">페이스북</a>
+            <a href="#" class="ut">유투브</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/header.js"></script>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script>
+    //우편번호 찾기
+    function kakaopost() {
+      new daum.Postcode({
+        oncomplete: function(data) {
+          document.querySelector("#address").value =  data.address
+        }
+      }).open();
+    }
+
+    //주문하기완료
+    let buyBtn = document.querySelector('.buy-btn');
+    let wrap = document.querySelector('.wrap');
+    buyBtn.addEventListener('click', function() {
+      wrap.classList.add('order-complete');
+      window.scrollTo(0,0);
+    });
+  </script>
+</body>
+</html>

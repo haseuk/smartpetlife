@@ -150,7 +150,7 @@ h3 {
   margin-top: 13.88888889vw;
 }
 .container .wrap section article .app-stores {
-  margin-bottom: 9.72222222vw;
+  margin-bottom: 16.66666667vw;
 }
 .container .wrap section article .app-stores a {
   width: 27.77777778vw;
@@ -186,7 +186,7 @@ h3 {
 }
 .container .wrap section article.top .visual {
   width: 88.88888889vw;
-  height: 121.11111111vw;
+  height: 108.61111111vw;
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url('../img/mo/img_mockup_sec1.png');
@@ -299,13 +299,13 @@ h3 {
   background-repeat: no-repeat;
   background-image: url('../img/mo/arti1-3.png');
   background-size: contain;
-  height: 28.88888889vw;
+  height: 29.44444444vw;
 }
 .container .wrap section article.care .gather-img .img-box span.img4 {
   background-repeat: no-repeat;
   background-image: url('../img/mo/arti1-4.png');
   background-size: contain;
-  height: 63.05555556vw;
+  height: 62.5vw;
 }
 .container .wrap section article.manage {
   background-color: #F5F5F5;
@@ -314,25 +314,25 @@ h3 {
   background-repeat: no-repeat;
   background-image: url('../img/mo/arti2-1.png');
   background-size: contain;
-  height: 55vw;
+  height: 71.66666667vw;
 }
 .container .wrap section article.manage .gather-img .img-box span.img2 {
   background-repeat: no-repeat;
   background-image: url('../img/mo/arti2-2.png');
   background-size: contain;
-  height: 13.88888889vw;
+  height: 18.05555556vw;
 }
 .container .wrap section article.manage .gather-img .img-box span.img3 {
   background-repeat: no-repeat;
-  background-image: url('../img/mo/arti1-3.png');
+  background-image: url('../img/mo/arti2-3.png');
   background-size: contain;
-  height: 28.88888889vw;
+  height: 23.61111111vw;
 }
 .container .wrap section article.manage .gather-img .img-box span.img4 {
   background-repeat: no-repeat;
   background-image: url('../img/mo/arti2-4.png');
   background-size: contain;
-  height: 60.27777778vw;
+  height: 55.55555556vw;
 }
 .container .wrap section article.compare .gather-img.mo {
   display: inline-block;
@@ -351,7 +351,7 @@ h3 {
   background-image: url('../img/mo/arti3-1.png');
   background-size: contain;
   width: 38.88888889vw;
-  height: 81.38888889vw;
+  height: 80.55555556vw;
   margin-bottom: 0vw;
 }
 .container .wrap section article.compare .gather-img .img-box span.img2 {
@@ -359,15 +359,18 @@ h3 {
   background-image: url('../img/mo/arti3-2.png');
   background-size: contain;
   width: 44.44444444vw;
-  height: 37.5vw;
-  margin-left: 4.16666667vw;
+  height: 41.66666667vw;
+  margin-top: 4.16666667vw;
+  margin-right: 0vw;
+  margin-bottom: 0vw;
+  margin-left: 2.77777778vw;
 }
 .container .wrap section article.compare .gather-img .img-box span.img3 {
   background-repeat: no-repeat;
   background-image: url('../img/mo/arti3-3.png');
   background-size: contain;
   width: 44.44444444vw;
-  height: 37.5vw;
+  height: 41.66666667vw;
   margin-top: -4.16666667vw;
   margin-right: 0vw;
   margin-bottom: 0vw;

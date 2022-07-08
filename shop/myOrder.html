@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMART PET LIFE SHOP</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/shop-mo.css">
+  <link rel="stylesheet" href="../css/shop-t.css">
+  <link rel="stylesheet" href="../css/shop-pc.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <div class="h-inner">
+          <h1><a href="">SMART PET LIFE</a></h1>
+          <p class="my-point">P182,900</p>
+          <a class="menu">메뉴</a>
+        </div>
+        <div class="menu-list">
+          <a href="main.html" class="menu-item">Home</a>
+          <a href="shop.html" class="menu-item">Shop</a>
+          <a href="cart.html" class="menu-item">Cart</a>
+          <a href="myOrder.html" class="menu-item active">My Order</a>
+        </div>
+      </header>
+
+
+      <!-- ########## 주문내역이 없을 경우 my-order에 no-order 클래스 추가 81번줄 주문내역 없음 화면 노출-->
+      <section class="my-order">
+        <h3>My Order</h3>
+        <article class="order-info">
+          <ul>
+            <li>
+              <div class="date">
+                <p>주문일자 <span>2022.04.05</span></p>
+                <p>주문번호 <span>ABC123456789</span></p>
+              </div>
+              <div class="prd-wrap">
+                <div class="prd">
+                  <img src="images/mo/cart1.png" alt="">
+                </div>
+                <div class="prd-info">
+                  <p class="nm">Pepe Collar</p>
+                  <p class="price-box"><span class="price">₩10,000</span><span class="ds">₩8,000</span></p>
+                  <p class="poi">P8,000</p>
+                </div>
+                <p class="quantity">Quantity <span>1개</span></p>
+              </div>
+              <div class="comp">
+                <p>주문완료</p>
+                <a href="orderDetail.html" class="detail-btn">상세보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="date">
+                <p>주문일자 <span>2022.04.05</span></p>
+                <p>주문번호 <span>ABC123456789</span></p>
+              </div>
+              <div class="prd-wrap">
+                <div class="prd">
+                  <img src="images/mo/cart1.png" alt="">
+                </div>
+                <div class="prd-info">
+                  <p class="nm">Pepe Collar</p>
+                  <p class="price-box"><span class="price">₩10,000</span><span class="ds">₩8,000</span></p>
+                  <p class="poi">P8,000</p>
+                </div>
+                <p class="quantity">Quantity <span>1개</span></p>
+              </div>
+              <div class="comp">
+                <p>주문완료</p>
+                <a href="orderDetail.html" class="detail-btn">상세보기</a>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- ########## 주문내역이 없을 경우 화면-->
+        <article class="no-order-cnt">
+          <span></span>
+          <p>주문내역이 없습니다.</p>
+          <a href="main.html" class="main-go">메인으로 이동</a>
+        </article>
+      </section>
+
+      <footer>
+        <div class="inner">
+          <h1>the BLEND</h1>
+          <div class="terms">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Term</a>
+          </div>
+          <div class="co-info">
+            사업자명 : (주)더블렌드<br class="w-und"><i> / </i>
+            대표자 : 연제창<br class="w-und"><i> / </i>
+            주소 : 서울특별시 강남구 도곡로 138,<br class="mo">
+            미래2빌딩 2층(도곡동)<br>
+            사업자등록번호 : 361-86-02120<br class="w-und"><i> / </i>
+            통신판매업신고번호 : 제2021-서울강남-02089
+          </div>
+          <p class="copy">Copyright Ⓒ 2022 theBLEND ALL<br class="mo"> rights reserved.</p>
+          <div class="sns">
+            <a href="#" class="inst">인스타그램</a>
+            <a href="#" class="fb">페이스북</a>
+            <a href="#" class="ut">유투브</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/header.js"></script>
+</body>
+</html>

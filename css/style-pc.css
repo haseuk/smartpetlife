@@ -189,15 +189,15 @@
     background-size: contain;
   }
   .container .wrap section article.top .visual {
-    width: 25.72727273rem;
-    height: 35.72727273rem;
+    width: 26.95454545rem;
+    height: 35.81818182rem;
     display: inline-block;
     background-repeat: no-repeat;
     background-image: url('../img/pc/img_mockup_sec1.png');
     background-size: contain;
     position: absolute;
     top: 0.86363636rem;
-    margin-left: -29.09090909rem;
+    margin-left: -27.27272727rem;
   }
   .container .wrap section article.arti {
     padding-top: 6.81818182rem;
@@ -386,32 +386,32 @@
   }
   .container .wrap section article.manage .gather-img .img-box span.img1 {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/arti2-1.svg');
+    background-image: url('../img/pc/arti2-1.png');
     background-size: contain;
-    height: 22.31818182rem;
+    height: 25.27272727rem;
   }
   .container .wrap section article.manage .gather-img .img-box span.img2 {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/arti2-2.svg');
+    background-image: url('../img/pc/arti2-2.png');
     background-size: contain;
-    height: 5.54545455rem;
+    height: 7.27272727rem;
   }
   .container .wrap section article.manage .gather-img .img-box span.img3 {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/arti2-3.svg');
+    background-image: url('../img/pc/arti2-3.png');
     background-size: contain;
-    height: 11.86363636rem;
+    height: 9.54545455rem;
     position: absolute;
     left: -18.18181818rem;
-    top: 7.36363636rem;
+    top: 9.09090909rem;
     right: auto;
     bottom: auto;
   }
   .container .wrap section article.manage .gather-img .img-box span.img4 {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/arti2-4.svg');
+    background-image: url('../img/pc/arti2-4.png');
     background-size: contain;
-    height: 24.36363636rem;
+    height: 22.27272727rem;
     margin: 0rem;
   }
   .container .wrap section article.compare {
@@ -445,10 +445,7 @@
     text-align: center;
   }
   .container .wrap section article.compare .gather-img .img-box.ib1 {
-    margin-top: 0rem;
-    margin-right: 1.36363636rem;
-    margin-bottom: 0rem;
-    margin-left: -0.45454545rem;
+    margin: 0rem;
   }
   .container .wrap section article.compare .gather-img .img-box span {
     margin-right: 0rem;
@@ -460,8 +457,8 @@
     background-repeat: no-repeat;
     background-image: url('../img/pc/arti3-1.png');
     background-size: contain;
-    width: 15.72727273rem;
-    height: 15rem;
+    width: 15.86363636rem;
+    height: 16rem;
     left: 0rem;
     top: 8.18181818rem;
     right: auto;
@@ -472,9 +469,9 @@
     background-image: url('../img/pc/arti3-2.png');
     background-size: contain;
     width: 16.90909091rem;
-    height: 14.18181818rem;
+    height: 16rem;
     left: 50%;
-    top: 13.63636364rem;
+    top: 11.59090909rem;
     right: auto;
     bottom: auto;
     margin-left: -26.36363636rem;
@@ -484,8 +481,8 @@
     background-repeat: no-repeat;
     background-image: url('../img/pc/arti3-3.png');
     background-size: contain;
-    width: 16.36363636rem;
-    height: 34.09090909rem;
+    width: 17.36363636rem;
+    height: 36.72727273rem;
     margin: 0rem;
     position: relative;
     z-index: 1;
@@ -495,7 +492,7 @@
     background-image: url('../img/pc/arti3-4.png');
     background-size: contain;
     width: 16.90909091rem;
-    height: 14.59090909rem;
+    height: 16rem;
     left: 50%;
     top: 8.18181818rem;
     right: auto;
@@ -506,8 +503,8 @@
     background-repeat: no-repeat;
     background-image: url('../img/pc/arti3-5.png');
     background-size: contain;
-    width: 15.36363636rem;
-    height: 15rem;
+    width: 15.5rem;
+    height: 16rem;
     right: 0rem;
     top: 13.63636364rem;
     left: auto;

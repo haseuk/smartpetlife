@@ -26,13 +26,17 @@
   .container .wrap header .h-inner h1 {
     width: 14.32291667vw;
     height: 6.51041667vw;
+    left: 7.8125vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
   }
   .container .wrap header .h-inner h1:after {
     content: '';
     display: block;
     width: 14.32291667vw;
     height: 3.64583333vw;
-    left: 7.8125vw;
+    left: 0vw;
     top: 1.43229167vw;
     right: auto;
     bottom: auto;
@@ -207,20 +211,67 @@
     margin-top: 7.8125vw;
   }
   .container .wrap section article .num-wrap {
-    width: 43.48958333vw;
+    width: 15.625vw;
     height: 6.25vw;
     margin-bottom: 1.5625vw;
+    right: 0vw;
+    top: 2.34375vw;
+    left: auto;
+    bottom: auto;
   }
-  .container .wrap section article .num-wrap span {
-    width: 4.42708333vw;
-    height: 2.99479167vw;
+  .container .wrap section article .num-wrap a {
+    width: 4.55729167vw;
+    height: 6.25vw;
   }
-  .container .wrap section article .num-wrap span:after {
-    width: 1.82291667vw;
-    height: 1.82291667vw;
+  .container .wrap section article .num-wrap a:after {
+    content: '';
+    display: block;
+    width: 2.21354167vw;
+    height: 2.21354167vw;
+    top: 2.08333333vw;
+  }
+  .container .wrap section article .num-wrap a.up:after {
+    right: 2.34375vw;
+  }
+  .container .wrap section article .num-wrap a.down:after {
+    left: 2.34375vw;
   }
   .container .wrap section article .num-wrap input {
     font-size: 1.953125vw;
+  }
+  .container .wrap section article .num-select {
+    width: 100%;
+    height: 6.25vw;
+    margin-bottom: 1.5625vw;
+  }
+  .container .wrap section article .num-select:after {
+    content: '';
+    display: block;
+    width: 2.21354167vw;
+    height: 2.21354167vw;
+    right: 2.08333333vw;
+    top: 1.953125vw;
+    left: auto;
+    bottom: auto;
+  }
+  .container .wrap section article .num-select .label {
+    font-size: 1.953125vw;
+    line-height: 6.25vw;
+    letter-spacing: -1%;
+    padding-left: 2.60416667vw;
+  }
+  .container .wrap section article .num-select .opt-list {
+    left: -0.13020833vw;
+    top: 5.98958333vw;
+    right: auto;
+    bottom: auto;
+    width: 43.48958333vw;
+    height: 0vw;
+  }
+  .container .wrap section article .num-select .opt-list .opt-item {
+    font-size: 1.953125vw;
+    height: 6.25vw;
+    line-height: 6.25vw;
     padding-left: 2.60416667vw;
   }
   .container .wrap section.terms-cnt {

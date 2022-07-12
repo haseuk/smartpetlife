@@ -15,7 +15,7 @@
     <div class="wrap">
       <header>
         <div class="h-inner">
-          <h1><a href="">SMART PET LIFE</a></h1>
+          <h1><a href="main.html">SMART PET LIFE</a></h1>
           <p class="my-point">P182,900</p>
           <a class="menu">메뉴</a>
         </div>
@@ -25,6 +25,7 @@
           <a href="cart.html" class="menu-item active">Cart</a>
           <a href="myOrder.html" class="menu-item">My Order</a>
         </div>
+        <div class="dim"></div>
       </header>
 
 
@@ -56,9 +57,9 @@
                 <div class="quantity">
                   <p>Quantity</p>
                   <div class="num-wrap">
-                    <span class="up"></span>
-                    <span class="down"></span>
-                    <input type="number" min="0" value="1">
+                    <a class="up"></a>
+                    <input type="number" min="0" readonly value="1">
+                    <a class="down"></a>
                   </div>
                 </div>
                 <a class="del-list">리스트 삭제</a>
@@ -79,9 +80,9 @@
                 <div class="quantity">
                   <p>Quantity</p>
                   <div class="num-wrap">
-                    <span class="up"></span>
-                    <span class="down"></span>
+                    <a class="up"></a>
                     <input type="number" min="0" value="1">
+                    <a class="down"></a>
                   </div>
                 </div>
                 <a class="del-list"></a>
@@ -185,6 +186,25 @@
     if(wi > 768) {
       wrap.style.minHeight = (cartH+headerH+footerH) +'px';
     }
+
+    let dec = document.querySelectorAll('.up');
+    let inc = document.querySelectorAll('.down');
+
+    Array.prototype.forEach.call(dec, function(e){
+      e.addEventListener('click', function() {
+        let input = e.parentNode.children[1]
+        input.value = parseInt(input.value) + 1;
+      })
+    });
+
+    Array.prototype.forEach.call(inc, function(e){
+      e.addEventListener('click', function() {
+        let input = e.parentNode.children[1]
+        if(input.value <= 0) {return}
+        input.value = parseInt(input.value) - 1;
+      })
+    });
+
   </script>
 </body>
 </html>

@@ -11,8 +11,8 @@
     .wrap {
       header { .wh(100%,50);
         .h-inner {
-          h1 { .wh(110,50);
-            &:after { .cnt; .wh(110,28); .lt(60,11); }
+          h1 { .wh(110,50); .lt(60,0);
+            &:after { .cnt; .wh(110,28); .lt(0,11); }
           }
           .my-point { .fs(11); .lh(13); .rt(90,24); }
           .menu { .wh(50,60);
@@ -69,11 +69,20 @@
             }
           }
           .main-go { .fs(15); .lh(50); .wh(270,50); .mt(60); }
-          .num-wrap { .wh(334,48); .mb(12);
-            span { .wh(34,23);
-              &:after { .wh(14,14); }
+          .num-wrap { .wh(120,48); .mb(12); .rt(0,18);
+            a { .wh(35,48);
+              &:after { .cnt; .wh(17,17); .t(16); }
+              &.up:after { .r(18); }
+              &.down:after { .l(18); }
             }
-            input { .fs(15); .pl(20); }
+            input { .fs(15); }
+          }
+          .num-select { .wh(100%,48); .mb(12);
+            &:after { .cnt; .wh(17,17); .rt(16,15); }
+            .label { .fs(15); .lh(48); .ls(-1%); .pl(20); }
+            .opt-list { .lt(-1,46); .wh(334,0);
+              .opt-item { .fs(15); .h(48); .lh(48); .pl(20); }
+            }
           }
         }
         &.terms-cnt { .p(0,60);

@@ -15,7 +15,7 @@
     <div class="wrap">
       <header>
         <div class="h-inner">
-          <h1><a href="">SMART PET LIFE</a></h1>
+          <h1><a href="main.html">SMART PET LIFE</a></h1>
           <p class="my-point">P182,900</p>
           <a class="menu">메뉴</a>
         </div>
@@ -25,6 +25,7 @@
           <a href="cart.html" class="menu-item">Cart</a>
           <a href="myOrder.html" class="menu-item">My Order</a>
         </div>
+        <div class="dim"></div>
       </header>
 
 
@@ -49,10 +50,17 @@
             </div>
             <div class="quantity">
               <p>Quantity</p>
-              <div class="num-wrap">
-                <span class="up"></span>
-                <span class="down"></span>
-                <input type="number" min="0" placeholder="0">
+<!--              <div class="num-wrap">-->
+<!--                <span class="up"></span>-->
+<!--                <span class="down"></span>-->
+<!--                <input type="number" min="0" placeholder="0">-->
+<!--              </div>-->
+              <div class="num-select">
+                <a class="label">0</a>
+                <ul class="opt-list">
+                  <li class="opt-item">1</li>
+                  <li class="opt-item">2</li>
+                </ul>
               </div>
               <div class="btns">
                 <a href="cart.html" class="cart-btn">장바구니</a>
@@ -62,40 +70,40 @@
           </div>
         </article>
         <article class="exp">
-          <p class="ex-t">상품설명</p>
+          <p class="ex-t">상품 설명</p>
           <div class="exp-img">
             <img src="images/mo/mask10.png" alt="">
           </div>
 
-          <p class="ex-t">상세정보</p>
+          <p class="ex-t">상세 정보</p>
           <div class="detail-txt">
             <table cellspacing="0" cellpadding="0" border="0" class="mo">
               <tr>
-                <th>-</th>
+                <th>판매자/공급자</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>포장단위별 용량</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>상품구성</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>관련법상 표기사항</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>원산지</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>보관방법 및 취급방법</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>제조년월일, 유통기한<br> 또는 품질 유지기한</th>
                 <td>-</td>
               </tr>
             </table>
@@ -107,25 +115,25 @@
                 <col width="376px">
               </colgroup>
               <tr>
-                <th>-</th>
+                <th>판매자/공급자</th>
                 <td>-</td>
-                <th>-</th>
-                <td>-</td>
-              </tr>
-              <tr>
-                <th>-</th>
-                <td>-</td>
-                <th>-</th>
+                <th>관련법상 표기사항</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>포장단위별 용량</th>
                 <td>-</td>
-                <th>-</th>
+                <th>원산지</th>
                 <td>-</td>
               </tr>
               <tr>
-                <th>-</th>
+                <th>상품구성</th>
+                <td>-</td>
+                <th>보관방법 및 취급방법</th>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th>제조년월일, 유통기한<br> 또는 품질 유지기한</th>
                 <td colspan="3">-</td>
               </tr>
             </table>
@@ -160,5 +168,25 @@
     </div>
   </div>
   <script src="js/header.js"></script>
+  <script>
+    const label = document.querySelector('.label');
+    const options = document.querySelectorAll('.opt-item');
+    const handleSelect = function(item) {
+      label.innerHTML = item.textContent;
+      label.parentNode.classList.remove('active');
+    }
+    options.forEach(function(option){
+      option.addEventListener('click', function(){
+        handleSelect(option);
+      })
+    });
+    label.addEventListener('click', function(){
+      if(label.parentNode.classList.contains('active')) {
+        label.parentNode.classList.remove('active');
+      } else {
+        label.parentNode.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 @use-rem: true;
 @rem: 22;
 
-@media screen and(min-width: 1024px) {
+@media screen and(min-width: 1025px) {
   html { font-size: 22px; }
   .fs13 { .fs(15); .lh(18); .ls(-2%); }
   .mo { .hide; }
@@ -94,17 +94,20 @@
             }
           }
           .main-go { .fs(15); .lh(50); .wh(440,50); .mt(80); }
-          .num-wrap { .wh(440,50); .mb(12);
-            span { .wh(34,25);
-              &:after { .wh(14,14); }
-              &.up {
-                &:after { .lb(0,1); }
-              }
-              &.down {
-                &:after { .lt(0,1); }
-              }
+          .num-wrap { .wh(120,50); .mb(12); .rt(0,18);
+            a { .wh(37,50);
+              &:after { .cnt; .wh(17,17); .t(17); }
+              &.up:after { .r(20); }
+              &.down:after { .l(20); }
             }
-            input { .fs(15); .pl(20); }
+            input { .fs(15); }
+          }
+          .num-select { .wh(100%,50); .mb(12);
+            &:after { .cnt; .wh(17,17); .rt(16,15); }
+            .label { .fs(15); .lh(50); .ls(-1%); .pl(20); }
+            .opt-list { .lt(-1,48); .wh(440,0);
+              .opt-item { .fs(15); .h(50); .lh(50); .pl(20); }
+            }
           }
         }
         &.terms-cnt { .p(0);

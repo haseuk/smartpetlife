@@ -149,7 +149,7 @@ input[type='number'] { -moz-appearance: textfield; }
             .t-h { .pb(14); .-b(#DDDDDD); .-box; .clear;
               .tit { .fs(18); .lh(22); .semi-bold; .ib; .vat; }
               .type { .fr;
-                a { .fs(13); .lh(22); .medium; .rel; .p(0,10); .-box; .rel;
+                a { .fs(13); .lh(22); color:#888; .medium; .rel; .p(0,10); .-box; .rel;
                   &:first-child:after { .hide; }
                   &:last-child { .pr(0); }
                   &:after { .cnt; .wh(1,10); .bgc(#DDDDDD); .abs; .lt(0,6); }
@@ -170,6 +170,9 @@ input[type='number'] { -moz-appearance: textfield; }
                 .ou-list.on + .in-wrap { .block; }
               }
             }
+            &[data-type-view='1'] .t-h .type [data-type='1'],
+            &[data-type-view='2'] .t-h .type [data-type='2'],
+            &[data-type-view='3'] .t-h .type [data-type='3'] { .semi-bold; color:#333; }
             &[data-type-view='1'] .dog-type,
             &[data-type-view='2'] .cat-type,
             &[data-type-view='3'] .etc-type { .block; }
@@ -412,7 +415,7 @@ input[type='number'] { -moz-appearance: textfield; }
       &.order-detail {
         input:disabled { .bgc(#F6F6F6); }
         .quantity {
-          input[type=number] { .wh(120,50); .-a(#ddd); .abs; .rt(0,18); .pl(20); .-box; }
+          input[type=number] { .fs(15); .wh(120,50); .-a(#ddd); .abs; .rt(0,18); .pl(20); .-box; }
           input[type=number]::-webkit-inner-spin-button,
           input[type=number]::-webkit-outer-spin-button {
             -webkit-appearance:none; margin: 0;opacity: 0;

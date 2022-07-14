@@ -56,6 +56,10 @@
   .container .wrap header .h-inner h1 {
     width: 7.27272727rem;
     height: 3.63636364rem;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
   }
   .container .wrap header .h-inner h1:after {
     content: '';

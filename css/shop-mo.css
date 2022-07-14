@@ -632,6 +632,7 @@ input[type='number'] {
 .container .wrap section.shop article.shop-menu-list .t-h .type a {
   font-size: 3.61111111vw;
   line-height: 6.11111111vw;
+  color: #888;
   font-weight: 500;
   padding-top: 0vw;
   padding-right: 2.77777778vw;
@@ -728,6 +729,12 @@ input[type='number'] {
 }
 .container .wrap section.shop article.shop-menu-list ul .ou-wrap .ou-list.on + .in-wrap {
   display: block;
+}
+.container .wrap section.shop article.shop-menu-list[data-type-view='1'] .t-h .type [data-type='1'],
+.container .wrap section.shop article.shop-menu-list[data-type-view='2'] .t-h .type [data-type='2'],
+.container .wrap section.shop article.shop-menu-list[data-type-view='3'] .t-h .type [data-type='3'] {
+  font-weight: 600;
+  color: #333;
 }
 .container .wrap section.shop article.shop-menu-list[data-type-view='1'] .dog-type,
 .container .wrap section.shop article.shop-menu-list[data-type-view='2'] .cat-type,
@@ -1560,6 +1567,7 @@ input[type='number'] {
   background-color: #F6F6F6;
 }
 .container .wrap section.order-detail .quantity input[type=number] {
+  font-size: 4.16666667vw;
   width: 33.33333333vw;
   height: 13.88888889vw;
   border: 1px solid #ddd;

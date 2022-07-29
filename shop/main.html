@@ -72,6 +72,30 @@
             </ul>
           </div>
         </article>
+
+
+
+        <!-- 07.28추가-->
+        <article class="banner">
+          <div class="swiper swiper-banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>댕냥이와 첫 동거를 시작한<br> 집사님들을 위한 <b>길라잡이</b></p>
+              </div>
+              <div class="swiper-slide">
+                <p>댕냥이와 첫 동거를 시작한<br> 집사님들을 위한 <b>길라잡이</b></p>
+              </div>
+              <div class="swiper-slide">
+                <p>댕냥이와 첫 동거를 시작한<br> 집사님들을 위한 <b>길라잡이</b></p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </article>
+        <!-- 끝-->
+
+
+
         <article class="ins">
           <div class="tit">
             <p>Instagram<br> <em>#smartpetlife</em></p>
@@ -208,6 +232,12 @@
             return
           }
         })
+      });
+
+      var swiperBanner = new Swiper(".swiper-banner", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
       });
     }
   </script>

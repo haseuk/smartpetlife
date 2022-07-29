@@ -4,6 +4,7 @@
 
 @media screen and(min-width: 768px) {
   .fs13 { .fs(14); .lh(17); .ls(-2%); }
+  ::placeholder { .fs(15); }
   .mo { .hide; }
   .ta { .ib; }
   .web { .hide; }
@@ -23,7 +24,7 @@
           .menu-item { .fs(15); .lh(18); .p(19,0); }
         }
         &.open {
-          .menu-list { .p(21,0); .h(266); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
+          .menu-list { .p(21,0); .h(378); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
         }
       }
       section { .p(50,60,120); .mt(50); .-box;
@@ -46,6 +47,21 @@
               }
             }
           }
+
+          //배너 추가 07.29
+          &.banner { .mt(80);
+            .swiper { .w(648);
+              .swiper-slide { .h(80); .pt(22); .rel; .contain('../shop/images/t/banner.png'); .wh(648,80);
+                &:after { .cnt; .wh(180,80); .contain('../shop/images/t/banner1.png'); .abs; .lt(324,0); }
+                p { .fs(14); .lh(18); .ls(-0.01em); .abs; .lt(144,23); .tl; }
+              }
+              .swiper-pagination { .b(-14);
+                .swiper-pagination-bullet { .wh(4,4); .m(0,4); }
+              }
+            }
+          }
+
+
           &.ins { .pt(200);
             .tit { .wh(230,150); .-a(#103831,4); .rt(30,80); .p(24);
               p { .fs(24); .lh(30); }
@@ -327,6 +343,66 @@
         &.order-detail {
           .quantity {
             input[type=number] { .wh(120,50); .rel; .rt; .pl(20); }
+          }
+        }
+        &.faq {
+          article {
+            .tit { .fs(22); .lh(26); .ls(-0.01em); .mb(50); }
+            .search-top { .clear;
+              .input { .wh(648,100); line-height:normal; .mb(30); .bgc(#F8F8F8); .p(26,79); .-box;
+                input { .fs(15); .wh(320,48); .lh(48); .p(0,20); .ib; .vam; .mr(10); }
+                .btn { .fs(15); .lh(48); color:#fff; .tc; .ib; .vam; .wh(160,48); .bgc(#103831); .rel; right:auto; top:auto; background-image: none; }
+              }
+              .num-select { .w(160);
+                .opt-list { .w(160); .l(-1); }
+              }
+            }
+            .faq-list { .mt(20); .-t(#103831,2);
+              li { .w(648);
+                &.head { .ib;
+                  p { .fs(15); color:#333; .ib; .vam; .lh(64); .tc; .semi-bold;
+                    &:nth-child(1) { .w(85); }
+                    &:nth-child(2) { .w(118); }
+                    &:nth-child(3) { .w(445); }
+                  }
+                }
+                > div { .p(23,0);
+                  i { .fs(15); .lh(18); .w(85); height:auto; .bgc(#fff); .mr(0);
+                    span {
+                      &:nth-child(1) { .hide; }
+                      &:nth-child(2) { .ib; }
+                    }
+                  }
+                  s { .fs(15); .lh(18); .w(130); .tc; .ib; .vat; }
+                  p { .fs(15); .lh(18); .ls(-0.01em); .vat; .mt(0); .w(433); .pl(30); .-box;
+                  }
+                }
+                &.on {
+                  .q {
+                    i { .bgc(#F8F8F8); }
+                  }
+                  .a { .p(40);
+                    i { .wh(30,30); .lh(30); }
+                    p { .lh(22); .mt(4); .w(480); .pl(14);
+                      b { .block; .mb(25); }
+                    }
+                  }
+                }
+              }
+            }
+            .pagination { .mt(60); .block; .tc;
+              .inner { .ib;
+                a { .fs(12); color:#333; .ls(-0.01em); .wh(34,34); .lh(34); .tc; .ib; .vam; .-a(#eee); .-r; .-box; .rel;
+                  &:last-child { .-r(#eee); }
+                  &:after { .cnt; .wh(14,14); .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
+                  &.first:after { .cnt; .contain('../shop/images/t/aarrow.svg');  }
+                  &.prev:after { .cnt; .contain('../shop/images/t/btn_arrow_right.svg'); }
+                  &.next:after { .cnt; .contain('../shop/images/t/btn_arrow_right.svg'); transform: translate(-50%,-50%) rotate(180deg); }
+                  &.last:after { .cnt; .contain('../shop/images/t/aarrow.svg'); transform: translate(-50%,-50%) rotate(180deg); }
+                  &.on { .-a(#103831); }
+                }
+              }
+            }
           }
         }
       }

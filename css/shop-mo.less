@@ -19,6 +19,8 @@ input:focus { outline: 1px solid #103831; }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { opacity: 0; display: none; }
 input[type='number'] { -moz-appearance: textfield; }
+::placeholder { .fs(15); color:#AAAAAA; }
+
 
 .container { .hf;
   .wrap { .fs(0); .tc; .hf; .rel;
@@ -41,7 +43,7 @@ input[type='number'] { -moz-appearance: textfield; }
       }
       .dim { .fix; .lt; .f; pointer-events: none; }
       &.open {
-        .menu-list { .p(21,0); .h(266); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
+        .menu-list { .p(21,0); .h(378); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
         .dim { pointer-events: auto; }
       }
     }
@@ -65,6 +67,7 @@ input[type='number'] { -moz-appearance: textfield; }
           .suggestion {
             ul {
               li { .wh(300,210); .mb(20); .br(2); overflow: hidden; isolation: isolate;
+                &:last-child { .mb(0); }
                 a { .f; }
                 img { transition: transform 0.5s; }
                 &:hover img { transform: scale(1.14); }
@@ -72,6 +75,24 @@ input[type='number'] { -moz-appearance: textfield; }
             }
           }
         }
+
+        //배너 추가 07.29
+        &.banner { .mt(80);
+          .swiper { .w(300); overflow: hidden;
+            .swiper-slide { .h(80); .pt(22); .-box; .tc; .bgc(#F1E3D3);
+              p { .fs(14); .lh(18); .ls(-0.01em); color: #111111; .medium;
+                b { color:#E27700; .bold; }
+              }
+            }
+            .swiper-pagination { .b(-12);
+              .swiper-pagination-bullet { .wh(4,4); .bgc(#EEEEEE); .m(0,4); opacity: 1;
+                &.swiper-pagination-bullet-active { .bgc(#103831); }
+              }
+            }
+          }
+        }
+
+
         &.ins { .pt(170); .-box;
           .tit { .wh(186,120); .-a(#103831,3); .abs; .lt(84,80); .p(20); .-box; z-index: 1;
             p { .fs(18); .lh(23); }
@@ -347,7 +368,6 @@ input[type='number'] { -moz-appearance: textfield; }
                 input { .hide; }
               }
             }
-            ::placeholder { .fs(15); color:#AAAAAA; }
           }
           .buy-btn { .fs(15); .lh(50); color:#fff; .medium; .wh(200,50); .bgc(#103831); .-box; .tc; .block; .mh-c; }
         }
@@ -420,6 +440,44 @@ input[type='number'] { -moz-appearance: textfield; }
           input[type=number]::-webkit-outer-spin-button {
             -webkit-appearance:none; margin: 0;opacity: 0;
           }
+        }
+      }
+      &.faq {
+        article {
+          .tit { .fs(18); .lh(22); .ls(-0.01em); color: #333333; .mb(40); .semi-bold; }
+          .search-top { .clear;
+            .input { .wh(300,48); .lh(48); .rel; .mb(30);
+              input { .fs(15); .medium; .-a(#ddd); .f; .p(0,20); .-box; }
+              .btn { .wh(15,15); .contain('../shop/images/mo/search.svg'); .abs; .rt(20,16); }
+            }
+            .num-select { .w(150); .fr; color:#555; .mb(0);
+              .opt-list { .w(150); .-box; .l(-1); color:#333; }
+            }
+          }
+          .faq-list { .mt(20); .-t(#103831,2);
+            li { .w(300); .tl; .-b(#DDDDDD);  .pointer;
+              &.head { .hide; }
+              > div { .p(17,10); .-box;
+                i { .fs(12); .lh(30); .tc; .ib; .vat; .wh(30,30); .br(50%); .bgc(#EEEEEE); .mr(10);
+                  span {
+                    &:nth-child(2) { .hide; }
+                  }
+                }
+                s { .hide; }
+                p { .fs(15); .lh(22); .ls(-0.01em); color:#333; .ib; .vat; .mt(4); .w(230); .keep-all; .medium;
+                  b { .medium; }
+                }
+              }
+              .a { .hide; .-t(#ddd);
+                i { .bgc(#103831); color:#fff; }
+              }
+              &.on {
+                .q { .bgc(#F8F8F8); }
+                .a { .block; }
+              }
+            }
+          }
+          .pagination { .hide; }
         }
       }
     }

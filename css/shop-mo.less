@@ -141,7 +141,7 @@ input[type='number'] { -moz-appearance: textfield; }
         }
         .num-select { .wh(100%,48); .ib; .-a(#ddd); .-box; .bgc(#fff); .rel; .mb(12);
           &:after { .cnt; .wh(17,17); .abs; .rt(16,15); .contain('../shop/images/mo/btn_arrow_up.svg'); transform: rotate(180deg); pointer-events: none; }
-          .label { .fs(15); .lh(48); .medium; .ls(-1%); .pl(20); .-box; .f; .-a; }
+          .label { .fs(15); .lh(48); .medium; .ls(-0.01em); .pl(20); .-box; .f; .-a; }
           .opt-list { .abs; .lt(-1,46); .wh(300,0); .-box; .bgc(#fff); overflow: hidden;
             .opt-item { .fs(15); .h(48); .lh(48); .medium; .-b(#ddd); .pl(20); .-box;
               &:hover { .bgc(#F9F9F9); }
@@ -484,13 +484,14 @@ input[type='number'] { -moz-appearance: textfield; }
         .tit { .fs(18); .ls(22); color:#333; .ls(-0.01em); .semi-bold; }
         .contact-list { .-t(#103831,2); .m(40,0);
           li { .-b(#ddd); .-box;
-            .list-head { .p(23,20); .-box;
+            &.head { .hide; }
+            .list-head { .p(23,20); .-box; .pointer;
               p { .fs(14); .lh(17); color:#333; .ls(-0.01em); .ib; .vam; .rel;
                 &.tit { .fs(15); .lh(18); .block; .mb(8); }
                 &.status { .mr(16);
-                  &:after { .cnt; .wh(1,10); .bgc(#ddd); .abs; .rt(-8,4); }
                   &.wait { color:#ccc; }
                 }
+                &.date:after { .cnt; .wh(1,10); .bgc(#ddd); .abs; .lt(-8,4); }
               }
             }
             .qna { .p(20,0,26); .-box; .clear; .hide;
@@ -503,15 +504,39 @@ input[type='number'] { -moz-appearance: textfield; }
               .edit-del { .mt(24); .fr; .p(0);
                 a { .fs(15); .lh(18); color:#999; .ib; .vam; .ls(-0.01em); .rel;
                   &.edit { .mr(16);
-                    &:after {.cnt; .wh(1,12); .bgc(#ddd); .abs; .rt(-9,2); }
+                    &:after { .cnt; .wh(1,12); .bgc(#ddd); .abs; .rt(-9,2); }
                   }
                 }
               }
             }
-            &.on .qna { .block; .-t(#ddd); .-box; }
+            &.on {
+              .list-head { .bgc(#F8F8F8); }
+              .qna { .block; .-t(#ddd); .-box; }
+            }
           }
         }
         .btn { .fs(15); .lh(18); .ls(-0.01em); color:#fff; .wh(160,48); .lh(48); .bgc(#103831); .tc; .block; .mh-c; }
+      }
+      &.edit-sec {
+        article {
+          .tit { .fs(18); .ls(22); color:#333; .ls(-0.01em); .semi-bold; }
+          .edit-cont { .-t(#103831,2); .mt(40); .pt(6); .-box;
+            .sub { .fs(15); .lh(18); color:#333; .ls(-0.01em); .medium; .m(24,0,12); }
+            .num-select {
+              .label { color:#aaa; }
+              &.val1 .label { color:#111; }
+            }
+            input { .fs(15); .lh(18); color:#111; .wh(300,50); .lh(50); .pl(20); .-box; .-a(#ddd); }
+            .textarea-wrap { .wh(300,180); .-a(#ddd); .-box; .rel;
+              textarea { .fs(15); .lh(18); color:#111; .wh(298,130); .mb(20); .p(20); .-box; font-family: Pretendard, sans-serif;
+                &:focus { outline: none; }
+              }
+              .txt-length { .fs(14); .lh(17); color:#aaa; .ls(-0.01em); .tr; .pr(20); .-box; .medium; }
+            }
+            .btn { .fs(15); .lh(18); .ls(-0.01em); color:#fff; .wh(160,48); .lh(48); .bgc(#ddd); .tc; .block; .mh-c; .mt(60); pointer-events: none; }
+            .val1 + p + .val2 + p + .val3 + .btn { .bgc(#103831); pointer-events: auto; }
+          }
+        }
       }
     }
     footer { .p(0,30,57); .-box; .tl;
@@ -537,6 +562,21 @@ input[type='number'] { -moz-appearance: textfield; }
       .order-result { .ib; }
     }
   }
+}
+
+.popup { .f; .fix; .lt; z-index: 100; .hide;
+  .dim { .f; .abs; .lt; background: rgba(17, 17, 17, 0.5); }
+  .inner { .fix; .lt(50%,50%); .wh(300,186); transform: translate(-50%,-50%); .bgc(#fff); .tc;
+    .del-inner { .pt(60); .-box; .f; .rel;
+      p { .fs(15); .lh(18); .ls(-0.01em); color:#555; }
+      .btns { .fs(0); .wh(100%,48); .abs; .lb; .-t(#eee);
+        a { .fs(15); .lh(18); .ls(-0.01em); color:#555; .w(50%); .lh(48); .ib;
+          &.cancel-btn { .-r(#eee); .-box; }
+        }
+      }
+    }
+  }
+  &.on { .ib; }
 }
 
 

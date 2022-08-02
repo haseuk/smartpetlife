@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMART PET LIFE SHOP</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/shop-mo.css">
+  <link rel="stylesheet" href="../css/shop-t.css">
+  <link rel="stylesheet" href="../css/shop-pc.css">
+  <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <div class="h-inner">
+          <h1><a href="main.html">SMART PET LIFE</a></h1>
+          <p class="my-point">P182,900</p>
+          <a class="menu">메뉴</a>
+        </div>
+        <div class="menu-list">
+          <a href="main.html" class="menu-item">Home</a>
+          <a href="shop.html" class="menu-item">Shop</a>
+          <a href="cart.html" class="menu-item">Cart</a>
+          <a href="myOrder.html" class="menu-item">My Order</a>
+          <a href="faq.html" class="menu-item active">FAQ</a>
+          <a href="contact.html" class="menu-item">1:1</a>
+        </div>
+        <div class="dim"></div>
+      </header>
+      <section class="edit-sec">
+        <article>
+          <p class="tit">1:1 Contact</p>
+          <div class="edit-cont">
+            <p class="sub">유형</p>
+            <div class="num-select">
+              <a class="label">문의 유형을 선택해주세요.</a>
+              <ul class="opt-list">
+                <li class="opt-item">서비스 이용</li>
+                <li class="opt-item">서비스 이용</li>
+                <li class="opt-item">서비스 이용</li>
+                <li class="opt-item">서비스 이용</li>
+              </ul>
+            </div>
+
+            <p class="sub">제목</p>
+            <input type="text" placeholder="제목을 입력해주세요." class="input-tit">
+
+            <p class="sub">내용</p>
+            <div class="textarea-wrap">
+              <textarea placeholder="내용을 입력해주세요." onkeyup="chkLength(this);" onkeypress="chkEnter();"></textarea>
+              <p class="txt-length"><span>0</span> / 1,000 자</p>
+            </div>
+            <a class="btn">등록</a>
+          </div>
+        </article>
+      </section>
+      <footer>
+        <div class="inner">
+          <h1>the BLEND</h1>
+          <div class="terms">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Term</a>
+          </div>
+          <div class="co-info">
+            사업자명 : (주)더블렌드<br class="w-und"> <i> / </i>
+            대표자 : 연제창<br class="w-und"> <i> / </i>
+            주소 : 서울특별시 강남구 도곡로 138,<br class="mo">
+            미래2빌딩 2층(도곡동)<br>
+            사업자등록번호 : 361-86-02120<br class="w-und"> <i> / </i>
+            통신판매업신고번호 : 제2021-서울강남-02089
+          </div>
+          <p class="copy">Copyright Ⓒ 2022 theBLEND ALL<br class="mo"> rights reserved.</p>
+          <div class="sns">
+            <a href="#" class="inst">인스타그램</a>
+            <a href="#" class="fb">페이스북</a>
+            <a href="#" class="ut">유투브</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="dim"></div>
+    <div class="inner">
+      <div class="del-inner">
+        <p>해당 글을 삭제하시겠습니까?</p>
+        <div class="btns">
+          <a class="cancel-btn">취소</a>
+          <a class="del-btn">삭제</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/header.js"></script>
+  <script>
+    const label = document.querySelector('.label');
+    const options = document.querySelectorAll('.opt-item');
+    let editCont = document.querySelector('.edit-cont');
+    const handleSelect = function(item) {
+      label.innerHTML = item.textContent;
+      label.parentNode.classList.remove('active');
+      label.parentNode.classList.add('val1');
+    }
+    options.forEach(function(option){
+      option.addEventListener('click', function(){
+        handleSelect(option);
+      })
+    });
+    label.addEventListener('click', function(){
+      if(label.parentNode.classList.contains('active')) {
+        label.parentNode.classList.remove('active');
+      } else {
+        label.parentNode.classList.add('active');
+      }
+    });
+
+    $(".input-tit").on("propertychange change keyup paste input", function() {
+      $(".input-tit").addClass('val2');
+    });
+
+    let lengthCount = document.querySelector('.txt-length span');
+    let txtWrap = document.querySelector('.textarea-wrap');
+    function chkLength(area) {
+      let txt = area.value;
+      let txtLength = txt.length;
+      lengthCount.innerHTML = txtLength;
+      txtWrap.classList.add('val3')
+      const maxLength = 1000;
+      if(txtLength > maxLength) {
+        alert(maxLength+'자 이상 작성할 수 없습니다.');
+        txt = txt.substr(0, maxLength);
+        area.value = txt;
+        area.focus();
+        lengthCount.innerHTML = ''+maxLength;
+      }
+    }
+
+    function chkEnter() {
+      if(event.keyCode == 13) {
+        event.returnValue = false;
+      }
+    }
+  </script>
+</body>
+</html>

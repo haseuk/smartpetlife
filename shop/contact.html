@@ -33,6 +33,7 @@
         <article>
           <p class="tit">1:1 Contact</p>
           <ul class="contact-list">
+            <li class="head"><p>제목</p><p>작성일</p><p>카테고리</p></li>
             <li>
               <div class="list-head">
                 <p class="tit">스마트펫라이프는 어떤 서비스인가요?</p>
@@ -119,18 +120,65 @@
       </footer>
     </div>
   </div>
+
+  <div class="popup">
+    <div class="dim"></div>
+    <div class="inner">
+      <div class="del-inner">
+        <p>해당 글을 삭제하시겠습니까?</p>
+        <div class="btns">
+          <a class="cancel-btn">취소</a>
+          <a class="del-btn">삭제</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/header.js"></script>
   <script>
-    let contactList = document.querySelectorAll('.contact-list li');
+    let contactList = document.querySelectorAll('.contact-list .list-head');
     Array.prototype.forEach.call(contactList, function(e) {
       e.addEventListener('click', function() {
-        if(e.classList.contains('on')) {
-          e.classList.remove('on');
+        if(e.parentNode.classList.contains('on')) {
+          e.parentNode.classList.remove('on');
         } else {
-          e.classList.add('on');
+          e.parentNode.classList.add('on');
         }
       })
-    })
+    });
+
+    let dels = document.querySelectorAll('.contact-list li .del');
+    let popup = document.querySelector('.popup');
+
+    let delList;
+    Array.prototype.forEach.call(dels, function(e) {
+      e.addEventListener('click', function() {
+        popupOpen();
+        delList = e.parentNode.parentNode.parentNode;
+      })
+    });
+
+    let cancelBtn = document.querySelector('.popup .cancel-btn');
+    let delBtn = document.querySelector('.popup .del-btn');
+    cancelBtn.addEventListener('click', function() {
+      popupClose();
+    });
+
+    delBtn.addEventListener('click', function() {
+      popupClose();
+      listDel();
+    });
+
+    function popupOpen() {
+      popup.classList.add('on');
+    }
+    function popupClose() {
+      popup.classList.remove('on');
+    }
+
+    function listDel() {
+      delList.remove();
+    }
   </script>
 </body>
 </html>

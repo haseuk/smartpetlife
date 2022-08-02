@@ -89,7 +89,7 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
   .container .wrap section {
-    padding-top: 6.51041667vw;
+    padding-top: 7.8125vw;
     padding-right: 7.8125vw;
     padding-bottom: 15.625vw;
     padding-left: 7.8125vw;
@@ -1286,6 +1286,198 @@
   .container .wrap section.faq article .pagination .inner a.on {
     border: 1px solid #103831;
   }
+  .container .wrap section.contact {
+    zoom: 1;
+  }
+  .container .wrap section.contact:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .container .wrap section.contact .tit {
+    font-size: 2.86458333vw;
+    letter-spacing: 3.38541667vw;
+    letter-spacing: -0.01em;
+  }
+  .container .wrap section.contact .contact-list {
+    border-top: 0.26041667vw solid #103831;
+    margin-top: 6.51041667vw;
+    margin-right: 0vw;
+    margin-bottom: 2.60416667vw;
+    margin-left: 0vw;
+  }
+  .container .wrap section.contact .contact-list li.head {
+    display: block;
+  }
+  .container .wrap section.contact .contact-list li.head p {
+    font-size: 1.953125vw;
+    line-height: 8.33333333vw;
+    letter-spacing: -0.01em;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+  }
+  .container .wrap section.contact .contact-list li.head p:nth-child(1) {
+    width: 53.38541667vw;
+  }
+  .container .wrap section.contact .contact-list li.head p:nth-child(2),
+  .container .wrap section.contact .contact-list li.head p:nth-child(3) {
+    width: 15.49479167vw;
+  }
+  .container .wrap section.contact .contact-list li .list-head {
+    padding-top: 0vw;
+    padding-right: 4.296875vw;
+    padding-bottom: 0vw;
+    padding-left: 5.20833333vw;
+    zoom: 1;
+  }
+  .container .wrap section.contact .contact-list li .list-head:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .container .wrap section.contact .contact-list li .list-head p {
+    font-size: 1.953125vw;
+    line-height: 8.33333333vw;
+    letter-spacing: -0.01em;
+  }
+  .container .wrap section.contact .contact-list li .list-head p.tit {
+    font-size: 1.953125vw;
+    line-height: 8.33333333vw;
+    margin-bottom: 0vw;
+    width: 42.96875vw;
+    float: left;
+  }
+  .container .wrap section.contact .contact-list li .list-head p.status {
+    margin-right: 0vw;
+    float: right;
+    margin-left: 7.421875vw;
+  }
+  .container .wrap section.contact .contact-list li .list-head p.date {
+    float: right;
+  }
+  .container .wrap section.contact .contact-list li .list-head p.date:after {
+    display: none;
+  }
+  .container .wrap section.contact .contact-list li .qna {
+    padding: 5.20833333vw;
+  }
+  .container .wrap section.contact .contact-list li .qna > div {
+    padding: 0vw;
+  }
+  .container .wrap section.contact .contact-list li .qna > div span {
+    font-size: 1.5625vw;
+    line-height: 3.90625vw;
+    width: 3.90625vw;
+    height: 3.90625vw;
+    margin-right: 1.82291667vw;
+  }
+  .container .wrap section.contact .contact-list li .qna > div p {
+    font-size: 1.953125vw;
+    line-height: 2.86458333vw;
+    letter-spacing: -0.01em;
+    width: 52.08333333vw;
+    margin-top: 0.52083333vw;
+  }
+  .container .wrap section.contact .contact-list li .qna .q {
+    margin-bottom: 3.90625vw;
+  }
+  .container .wrap section.contact .contact-list li .qna .edit-del {
+    margin-top: 4.6875vw;
+  }
+  .container .wrap section.contact .contact-list li .qna .edit-del a {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    letter-spacing: -0.01em;
+  }
+  .container .wrap section.contact .contact-list li .qna .edit-del a.edit {
+    margin-right: 2.08333333vw;
+  }
+  .container .wrap section.contact .contact-list li .qna .edit-del a.edit:after {
+    content: '';
+    display: block;
+    width: 0.13020833vw;
+    height: 1.5625vw;
+    right: -1.171875vw;
+    top: 0.26041667vw;
+    left: auto;
+    bottom: auto;
+  }
+  .container .wrap section.contact .btn {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    letter-spacing: -0.01em;
+    width: 20.83333333vw;
+    height: 6.25vw;
+    line-height: 6.25vw;
+    float: right;
+  }
+  .container .wrap section.edit-sec article .tit {
+    font-size: 2.86458333vw;
+    letter-spacing: 3.38541667vw;
+    letter-spacing: -0.01em;
+  }
+  .container .wrap section.edit-sec article .edit-cont {
+    border-top: 0.26041667vw solid #103831;
+    margin-top: 6.51041667vw;
+    padding-top: 0.78125vw;
+  }
+  .container .wrap section.edit-sec article .edit-cont .sub {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    letter-spacing: -0.01em;
+    margin-top: 3.125vw;
+    margin-right: 0vw;
+    margin-bottom: 1.5625vw;
+    margin-left: 0vw;
+  }
+  .container .wrap section.edit-sec article .edit-cont .num-select .opt-list {
+    width: 84.375vw;
+    z-index: 2;
+  }
+  .container .wrap section.edit-sec article .edit-cont input {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    width: 84.375vw;
+    height: 6.51041667vw;
+    line-height: 6.51041667vw;
+    padding-left: 2.60416667vw;
+  }
+  .container .wrap section.edit-sec article .edit-cont .textarea-wrap {
+    width: 84.375vw;
+    height: 23.4375vw;
+  }
+  .container .wrap section.edit-sec article .edit-cont .textarea-wrap textarea {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    width: 84.11458333vw;
+    height: 16.92708333vw;
+    margin-bottom: 2.34375vw;
+    padding: 2.60416667vw;
+  }
+  .container .wrap section.edit-sec article .edit-cont .textarea-wrap .txt-length {
+    font-size: 1.82291667vw;
+    line-height: 2.21354167vw;
+    letter-spacing: -0.01em;
+    padding-right: 2.60416667vw;
+  }
+  .container .wrap section.edit-sec article .edit-cont .btn {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    letter-spacing: -0.01em;
+    width: 35.15625vw;
+    height: 6.25vw;
+    line-height: 6.25vw;
+    margin-top: 7.8125vw;
+  }
   .container .wrap footer {
     padding-top: 0vw;
     padding-right: 7.8125vw;
@@ -1353,5 +1545,27 @@
     right: auto;
     top: auto;
   }
+}
+.popup .inner {
+  width: 39.0625vw;
+  height: 24.21875vw;
+}
+.popup .inner .del-inner {
+  padding-top: 7.8125vw;
+}
+.popup .inner .del-inner p {
+  font-size: 1.953125vw;
+  line-height: 2.34375vw;
+  letter-spacing: -0.01em;
+}
+.popup .inner .del-inner .btns {
+  width: 100%;
+  height: 6.25vw;
+}
+.popup .inner .del-inner .btns a {
+  font-size: 1.953125vw;
+  line-height: 2.34375vw;
+  letter-spacing: -0.01em;
+  line-height: 6.25vw;
 }
 /*# sourceMappingURL=shop-t.css.map */

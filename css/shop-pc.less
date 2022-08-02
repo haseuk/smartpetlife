@@ -414,6 +414,55 @@
             }
           }
         }
+        &.contact {
+          .tit { .fs(30); .ls(36); .ls(-0.01em); }
+          .contact-list { .-t(#103831,2); .m(60,0,20);
+            li {
+              &.head {
+                p { .fs(15); .lh(70); .ls(-0.01em);
+                  &:nth-child(1) { .w(810); }
+                  &:nth-child(2), &:nth-child(3) { .w(135); }
+                }
+              }
+              .list-head { .p(0,40);
+                p { .fs(15); .lh(70); .ls(-0.01em);
+                  &.tit { .fs(15); .lh(70); .w(730); }
+                  &.status {  .ml(67); }
+                }
+              }
+              .qna { .p(40);
+                > div {
+                  span { .fs(12);  .lh(30); .wh(30,30); .mr(14); }
+                  p { .fs(15); .lh(22); .ls(-0.01em); .w(400); .mt(4); }
+                }
+                .q { .mb(30); }
+                .edit-del { .mt(36);
+                  a { .fs(15); .lh(18); .ls(-0.01em);
+                    &.edit { .mr(16);
+                      &:after { .cnt; .wh(1,12); .rt(-9,2); }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .btn { .fs(15); .lh(18); .ls(-0.01em); .wh(200,48); .lh(48); }
+        }
+        &.edit-sec {
+          article {
+            .tit { .fs(30); .ls(36); .ls(-0.01em); }
+            .edit-cont { .-t(#103831,2); .mt(60); .pt(10);
+              .sub { .fs(15); .lh(18); .ls(-0.01em); .m(30,0,12); }
+              .num-select .opt-list { .w(1080); }
+              input { .fs(15); .lh(18); .wh(1080,50); .lh(50); .pl(20); }
+              .textarea-wrap { .wh(1080,200);
+                textarea { .fs(15); .lh(18); .wh(1078,150); .mb(18); .p(20); }
+                .txt-length { .fs(14); .lh(17); .ls(-0.01em); .pr(20); }
+              }
+              .btn { .fs(15); .lh(18); .ls(-0.01em); .wh(440,48); .lh(48); .mt(120); }
+            }
+          }
+        }
       }
 
       footer { .p(0,0,60); .w(1080); .mh-c;
@@ -436,6 +485,16 @@
         .order-result + footer { .w(1080); .abs; .lb(50%,0); .ml(-540); }
       }
       .no-order + footer { .w(1080); .abs; .lb(50%,0); .ml(-540); }
+    }
+  }
+}
+.popup {
+  .inner { .wh(300,186);
+    .del-inner { .pt(60);
+      p { .fs(15); .lh(18); .ls(-0.01em); }
+      .btns { .wh(100%,48);
+        a { .fs(15); .lh(18); .ls(-0.01em); .lh(48); }
+      }
     }
   }
 }

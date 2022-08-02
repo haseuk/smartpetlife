@@ -1761,6 +1761,167 @@ input[type='number'] {
 .container .wrap section.faq article .pagination {
   display: none;
 }
+.container .wrap section.contact .tit {
+  font-size: 5vw;
+  letter-spacing: 6.11111111vw;
+  color: #333;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.container .wrap section.contact .contact-list {
+  border-top: 0.55555556vw solid #103831;
+  margin-top: 11.11111111vw;
+  margin-right: 0vw;
+  margin-bottom: 11.11111111vw;
+  margin-left: 0vw;
+}
+.container .wrap section.contact .contact-list li {
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.container .wrap section.contact .contact-list li .list-head {
+  padding-top: 6.38888889vw;
+  padding-right: 5.55555556vw;
+  padding-bottom: 6.38888889vw;
+  padding-left: 5.55555556vw;
+  box-sizing: border-box;
+}
+.container .wrap section.contact .contact-list li .list-head p {
+  font-size: 3.88888889vw;
+  line-height: 4.72222222vw;
+  color: #333;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.container .wrap section.contact .contact-list li .list-head p.tit {
+  font-size: 4.16666667vw;
+  line-height: 5vw;
+  display: block;
+  margin-bottom: 2.22222222vw;
+}
+.container .wrap section.contact .contact-list li .list-head p.status {
+  margin-right: 4.44444444vw;
+}
+.container .wrap section.contact .contact-list li .list-head p.status:after {
+  content: '';
+  display: block;
+  width: 0.27777778vw;
+  height: 2.77777778vw;
+  background-color: #ddd;
+  position: absolute;
+  right: -2.22222222vw;
+  top: 1.11111111vw;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap section.contact .contact-list li .list-head p.status.wait {
+  color: #ccc;
+}
+.container .wrap section.contact .contact-list li .qna {
+  padding-top: 5.55555556vw;
+  padding-right: 0vw;
+  padding-bottom: 7.22222222vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+  zoom: 1;
+  display: none;
+}
+.container .wrap section.contact .contact-list li .qna:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap section.contact .contact-list li .qna > div {
+  padding-top: 0vw;
+  padding-right: 2.77777778vw;
+  padding-bottom: 0vw;
+  padding-left: 2.77777778vw;
+  box-sizing: border-box;
+}
+.container .wrap section.contact .contact-list li .qna > div span {
+  font-size: 3.33333333vw;
+  color: #333;
+  text-align: center;
+  line-height: 8.33333333vw;
+  font-weight: 600;
+  width: 8.33333333vw;
+  height: 8.33333333vw;
+  border-radius: 50%;
+  background-color: #EEEEEE;
+  margin-right: 3.88888889vw;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap section.contact .contact-list li .qna > div p {
+  font-size: 4.16666667vw;
+  line-height: 6.11111111vw;
+  letter-spacing: -0.01em;
+  color: #333;
+  display: inline-block;
+  vertical-align: top;
+  width: 65.55555556vw;
+  margin-top: 1.11111111vw;
+}
+.container .wrap section.contact .contact-list li .qna .q {
+  margin-bottom: 8.33333333vw;
+}
+.container .wrap section.contact .contact-list li .qna .a span {
+  background-color: #103831;
+  color: #fff;
+}
+.container .wrap section.contact .contact-list li .qna .edit-del {
+  margin-top: 6.66666667vw;
+  float: right;
+  padding: 0vw;
+}
+.container .wrap section.contact .contact-list li .qna .edit-del a {
+  font-size: 4.16666667vw;
+  line-height: 5vw;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: -0.01em;
+  position: relative;
+}
+.container .wrap section.contact .contact-list li .qna .edit-del a.edit {
+  margin-right: 4.44444444vw;
+}
+.container .wrap section.contact .contact-list li .qna .edit-del a.edit:after {
+  content: '';
+  display: block;
+  width: 0.27777778vw;
+  height: 3.33333333vw;
+  background-color: #ddd;
+  position: absolute;
+  right: -2.5vw;
+  top: 0.55555556vw;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap section.contact .contact-list li.on .qna {
+  display: block;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.container .wrap section.contact .btn {
+  font-size: 4.16666667vw;
+  line-height: 5vw;
+  letter-spacing: -0.01em;
+  color: #fff;
+  width: 44.44444444vw;
+  height: 13.33333333vw;
+  line-height: 13.33333333vw;
+  background-color: #103831;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container .wrap footer {
   padding-top: 0vw;
   padding-right: 8.33333333vw;

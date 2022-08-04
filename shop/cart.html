@@ -24,6 +24,8 @@
           <a href="shop.html" class="menu-item">Shop</a>
           <a href="cart.html" class="menu-item active">Cart</a>
           <a href="myOrder.html" class="menu-item">My Order</a>
+          <a href="faq.html" class="menu-item">FAQ</a>
+          <a href="contact.html" class="menu-item">1:1</a>
         </div>
         <div class="dim"></div>
       </header>
@@ -46,6 +48,7 @@
                   <input type="checkbox" onclick="prdChecked()">
                   <i></i>
                 </label>
+                <a href="shopDetail.html" class="shop-detail-go">디테일보기</a><!-- 07.28추가-->
                 <div class="prd">
                   <img src="images/mo/cart1.png" alt="">
                 </div>
@@ -58,7 +61,7 @@
                   <p>Quantity</p>
                   <div class="num-wrap">
                     <a class="up"></a>
-                    <input type="number" min="0" readonly value="1">
+                    <input type="number" min="1" readonly value="1">
                     <a class="down"></a>
                   </div>
                 </div>
@@ -69,6 +72,7 @@
                   <input type="checkbox" onclick="prdChecked()">
                   <i></i>
                 </label>
+                <a href="shopDetail.html" class="shop-detail-go">디테일보기</a><!-- 07.28추가-->
                 <div class="prd">
                   <img src="images/mo/cart2.png" alt="">
                 </div>
@@ -81,7 +85,7 @@
                   <p>Quantity</p>
                   <div class="num-wrap">
                     <a class="up"></a>
-                    <input type="number" min="0" value="1">
+                    <input type="number" min="1" value="1">
                     <a class="down"></a>
                   </div>
                 </div>
@@ -200,7 +204,7 @@
     Array.prototype.forEach.call(inc, function(e){
       e.addEventListener('click', function() {
         let input = e.parentNode.children[1]
-        if(input.value <= 0) {return}
+        if(input.value <= 1) {return}
         input.value = parseInt(input.value) - 1;
       })
     });

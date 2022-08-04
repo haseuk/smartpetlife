@@ -25,6 +25,8 @@
           <a href="shop.html" class="menu-item">Shop</a>
           <a href="cart.html" class="menu-item">Cart</a>
           <a href="myOrder.html" class="menu-item">My Order</a>
+          <a href="faq.html" class="menu-item">FAQ</a>
+          <a href="contact.html" class="menu-item">1:1</a>
         </div>
         <div class="dim"></div>
       </header>
@@ -229,12 +231,18 @@
             }
             e.classList.add('active');
           } else {
-            return
+            return false;
           }
         })
       });
 
+      // 07.28추가
       var swiperBanner = new Swiper(".swiper-banner", {
+        speed:2000,
+        autoplay: {
+          delay:3000,
+        },
+        loop:true,
         pagination: {
           el: ".swiper-pagination",
         },

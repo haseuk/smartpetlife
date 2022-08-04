@@ -35,7 +35,7 @@
           .my-point { .fs(15); .lh(80); .rt; }
           .menu { .hide; }
         }
-        .menu-list { width:auto; .h(80); .lt(50%,0); .tr; .ml(-106);
+        .menu-list { width:auto; .h(80); .lt(50%,0); .tr; .ml(-136);
           .menu-item { .fs(15); .lh(80); .p(0,0); .p(0,30); .-box; .ib; .vam; .pointer; .rel; z-index:5; }
         }
         &.open {
@@ -235,6 +235,7 @@
                     label { .mr(26);
                       input[type=checkbox] + i { .wh(24,24); }
                     }
+                    .shop-detail-go { .wh(500,160); .lt(50,30); }
                     .prd { .wh(160,160); .br(4); .mr(24); }
                     .prd-info {
                       p { .fs(18); .lh(22);
@@ -365,7 +366,7 @@
         }
         &.order-detail {
           .quantity {
-            input[type=number] { .wh(160,50); .pl(20); }
+            input[type=number] { .fs(15); .wh(160,50); .pl(20); }
           }
         }
         &.faq {
@@ -487,13 +488,17 @@
       .no-order + footer { .w(1080); .abs; .lb(50%,0); .ml(-540); }
     }
   }
-}
-.popup {
-  .inner { .wh(300,186);
-    .del-inner { .pt(60);
-      p { .fs(15); .lh(18); .ls(-0.01em); }
-      .btns { .wh(100%,48);
-        a { .fs(15); .lh(18); .ls(-0.01em); .lh(48); }
+  .popup {
+    .inner { .wh(300,186);
+      p, a { .fs(15); .lh(18); .ls(-0.01em); }
+      .del-inner { .pt(60);
+        .btns { .wh(100%,48);
+          a { .lh(48); }
+        }
+      }
+      .comp-inner { .pt(40);
+        img { .wh(26,26); .mb(14); }
+        .confirm { .wh(100%,48); .lh(48); }
       }
     }
   }

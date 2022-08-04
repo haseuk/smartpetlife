@@ -685,6 +685,14 @@
     background-image: url('../shop/images/t/chkd.svg');
     background-size: contain;
   }
+  .container .wrap section.cart article.selects-prd .cart-cnt ul li .shop-detail-go {
+    width: 52.08333333vw;
+    height: 13.02083333vw;
+    left: 6.51041667vw;
+    top: 3.90625vw;
+    right: auto;
+    bottom: auto;
+  }
   .container .wrap section.cart article.selects-prd .cart-cnt ul li .prd {
     width: 13.02083333vw;
     height: 13.02083333vw;
@@ -1055,6 +1063,7 @@
     padding-top: 14.32291667vw;
   }
   .container .wrap section.order-detail .quantity input[type=number] {
+    font-size: 1.953125vw;
     width: 15.625vw;
     height: 6.51041667vw;
     position: relative;
@@ -1441,7 +1450,6 @@
   }
   .container .wrap section.edit-sec article .edit-cont .num-select .opt-list {
     width: 84.375vw;
-    z-index: 2;
   }
   .container .wrap section.edit-sec article .edit-cont input {
     font-size: 1.953125vw;
@@ -1545,27 +1553,38 @@
     right: auto;
     top: auto;
   }
-}
-.popup .inner {
-  width: 39.0625vw;
-  height: 24.21875vw;
-}
-.popup .inner .del-inner {
-  padding-top: 7.8125vw;
-}
-.popup .inner .del-inner p {
-  font-size: 1.953125vw;
-  line-height: 2.34375vw;
-  letter-spacing: -0.01em;
-}
-.popup .inner .del-inner .btns {
-  width: 100%;
-  height: 6.25vw;
-}
-.popup .inner .del-inner .btns a {
-  font-size: 1.953125vw;
-  line-height: 2.34375vw;
-  letter-spacing: -0.01em;
-  line-height: 6.25vw;
+  .popup .inner {
+    width: 39.0625vw;
+    height: 24.21875vw;
+  }
+  .popup .inner p,
+  .popup .inner a {
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+    letter-spacing: -0.01em;
+  }
+  .popup .inner .del-inner {
+    padding-top: 7.8125vw;
+  }
+  .popup .inner .del-inner .btns {
+    width: 100%;
+    height: 6.25vw;
+  }
+  .popup .inner .del-inner .btns a {
+    line-height: 6.25vw;
+  }
+  .popup .inner .comp-inner {
+    padding-top: 5.20833333vw;
+  }
+  .popup .inner .comp-inner img {
+    width: 3.38541667vw;
+    height: 3.38541667vw;
+    margin-bottom: 1.82291667vw;
+  }
+  .popup .inner .comp-inner .confirm {
+    width: 100%;
+    height: 6.25vw;
+    line-height: 6.25vw;
+  }
 }
 /*# sourceMappingURL=shop-t.css.map */

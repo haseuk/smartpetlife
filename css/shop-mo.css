@@ -332,16 +332,16 @@ input[type='number'] {
   font-weight: 700;
 }
 .container .wrap section article.banner .swiper .swiper-pagination {
-  bottom: -3.33333333vw;
+  bottom: -5vw;
 }
 .container .wrap section article.banner .swiper .swiper-pagination .swiper-pagination-bullet {
-  width: 1.11111111vw;
-  height: 1.11111111vw;
+  width: 1.66666667vw;
+  height: 1.66666667vw;
   background-color: #EEEEEE;
   margin-top: 0vw;
-  margin-right: 1.11111111vw;
+  margin-right: 1.66666667vw;
   margin-bottom: 0vw;
-  margin-left: 1.11111111vw;
+  margin-left: 1.66666667vw;
   opacity: 1;
 }
 .container .wrap section article.banner .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -1083,6 +1083,16 @@ input[type='number'] {
 .container .wrap section.cart article.selects-prd .cart-cnt ul li label input {
   display: none;
 }
+.container .wrap section.cart article.selects-prd .cart-cnt ul li .shop-detail-go {
+  width: 61.11111111vw;
+  height: 22.22222222vw;
+  position: absolute;
+  left: 8.33333333vw;
+  top: 5.55555556vw;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+}
 .container .wrap section.cart article.selects-prd .cart-cnt ul li .prd {
   width: 22.22222222vw;
   height: 22.22222222vw;
@@ -1248,6 +1258,7 @@ input[type='number'] {
   font-size: 4.16666667vw;
   width: 100%;
   height: 13.88888889vw;
+  color: #333;
   border: 1px solid #ddd;
   box-sizing: border-box;
   line-height: 13.88888889vw;
@@ -1607,13 +1618,14 @@ input[type='number'] {
 .container .wrap section.my-order.no-order .no-order-cnt {
   display: block;
 }
-.container .wrap section.order-detail input:disabled {
+.container .wrap section.order-detail input {
   background-color: #F6F6F6;
 }
 .container .wrap section.order-detail .quantity input[type=number] {
   font-size: 4.16666667vw;
   width: 33.33333333vw;
   height: 13.88888889vw;
+  color: #333;
   border: 1px solid #ddd;
   position: absolute;
   right: 0vw;
@@ -1956,6 +1968,9 @@ input[type='number'] {
 .container .wrap section.edit-sec article .edit-cont .num-select .label {
   color: #aaa;
 }
+.container .wrap section.edit-sec article .edit-cont .num-select .opt-list {
+  z-index: 2;
+}
 .container .wrap section.edit-sec article .edit-cont .num-select.val1 .label {
   color: #111;
 }
@@ -2129,6 +2144,15 @@ input[type='number'] {
   transform: translate(-50%, -50%);
   background-color: #fff;
   text-align: center;
+  border: 1px solid #EEEEEE;
+}
+.popup .inner p,
+.popup .inner a {
+  font-size: 4.16666667vw;
+  line-height: 5vw;
+  letter-spacing: -0.01em;
+  color: #555;
+  font-weight: 600;
 }
 .popup .inner .del-inner {
   padding-top: 16.66666667vw;
@@ -2136,12 +2160,6 @@ input[type='number'] {
   width: 100%;
   height: 100%;
   position: relative;
-}
-.popup .inner .del-inner p {
-  font-size: 4.16666667vw;
-  line-height: 5vw;
-  letter-spacing: -0.01em;
-  color: #555;
 }
 .popup .inner .del-inner .btns {
   font-size: 0vw;
@@ -2155,10 +2173,6 @@ input[type='number'] {
   border-top: 1px solid #eee;
 }
 .popup .inner .del-inner .btns a {
-  font-size: 4.16666667vw;
-  line-height: 5vw;
-  letter-spacing: -0.01em;
-  color: #555;
   width: 50%;
   line-height: 13.33333333vw;
   display: inline-block;
@@ -2166,6 +2180,26 @@ input[type='number'] {
 .popup .inner .del-inner .btns a.cancel-btn {
   border-right: 1px solid #eee;
   box-sizing: border-box;
+}
+.popup .inner .comp-inner {
+  padding-top: 11.11111111vw;
+  box-sizing: border-box;
+}
+.popup .inner .comp-inner img {
+  width: 7.22222222vw;
+  height: 7.22222222vw;
+  margin-bottom: 3.88888889vw;
+}
+.popup .inner .comp-inner .confirm {
+  width: 100%;
+  height: 13.33333333vw;
+  line-height: 13.33333333vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+  border-top: 1px solid #EEEEEE;
 }
 .popup.on {
   display: inline-block;

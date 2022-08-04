@@ -21,7 +21,6 @@ input[type=number]::-webkit-outer-spin-button { opacity: 0; display: none; }
 input[type='number'] { -moz-appearance: textfield; }
 ::placeholder { .fs(15); color:#AAAAAA; }
 
-
 .container { .hf;
   .wrap { .fs(0); .tc; .hf; .rel;
     header { .fix; .lt; .wh(100%,60); z-index: 10; .bgc(#fff); .tl;
@@ -84,8 +83,8 @@ input[type='number'] { -moz-appearance: textfield; }
                 b { color:#E27700; .bold; }
               }
             }
-            .swiper-pagination { .b(-12);
-              .swiper-pagination-bullet { .wh(4,4); .bgc(#EEEEEE); .m(0,4); opacity: 1;
+            .swiper-pagination { .b(-18);
+              .swiper-pagination-bullet { .wh(6,6); .bgc(#EEEEEE); .m(0,6); opacity: 1;
                 &.swiper-pagination-bullet-active { .bgc(#103831); }
               }
             }
@@ -284,6 +283,7 @@ input[type='number'] { -moz-appearance: textfield; }
                     input[type=checkbox]:checked + i { .contain('../shop/images/mo/chkd.svg'); }
                     input { .hide; }
                   }
+                  .shop-detail-go { .wh(220,80); .abs; .lt(30,20); z-index: 1; }
                   .prd { .wh(80,80); .ib; .vam; .br(2); overflow: hidden; .mr(14);
                     img { .wf; }
                   }
@@ -345,7 +345,7 @@ input[type='number'] { -moz-appearance: textfield; }
               &.tit { .mt(50); .semi-bold; }
               &.sub-tit { .mt(24); }
             }
-            input[type=text] { .fs(15); .wh(100%,50); .-a(#ddd); .-box; .lh(50); .pl(20); .mt(12); }
+            input[type=text] { .fs(15); .wh(100%,50); color:#333; .-a(#ddd); .-box; .lh(50); .pl(20); .mt(12); }
             .add {
               #address { .w(190); .mr(10); .ib; .vam; .-a(#DDDDDD); .bgc(#F6F6F6); .pr(20); overflow: hidden; text-overflow: ellipsis; .nowrap; }
               input[type=button] { .fs(15); .lh(50); .wh(100,50); .ib; .vam; .tc; color:#fff; .bgc(#103831); .-a; .mt(12); }
@@ -433,9 +433,9 @@ input[type='number'] { -moz-appearance: textfield; }
         }
       }
       &.order-detail {
-        input:disabled { .bgc(#F6F6F6); }
+        input { .bgc(#F6F6F6); }
         .quantity {
-          input[type=number] { .fs(15); .wh(120,50); .-a(#ddd); .abs; .rt(0,18); .pl(20); .-box; }
+          input[type=number] { .fs(15); .wh(120,50); color:#333; .-a(#ddd); .abs; .rt(0,18); .pl(20); .-box; }
           input[type=number]::-webkit-inner-spin-button,
           input[type=number]::-webkit-outer-spin-button {
             -webkit-appearance:none; margin: 0;opacity: 0;
@@ -524,6 +524,7 @@ input[type='number'] { -moz-appearance: textfield; }
             .sub { .fs(15); .lh(18); color:#333; .ls(-0.01em); .medium; .m(24,0,12); }
             .num-select {
               .label { color:#aaa; }
+              .opt-list { z-index: 2; }
               &.val1 .label { color:#111; }
             }
             input { .fs(15); .lh(18); color:#111; .wh(300,50); .lh(50); .pl(20); .-box; .-a(#ddd); }
@@ -566,14 +567,18 @@ input[type='number'] { -moz-appearance: textfield; }
 
 .popup { .f; .fix; .lt; z-index: 100; .hide;
   .dim { .f; .abs; .lt; background: rgba(17, 17, 17, 0.5); }
-  .inner { .fix; .lt(50%,50%); .wh(300,186); transform: translate(-50%,-50%); .bgc(#fff); .tc;
+  .inner { .fix; .lt(50%,50%); .wh(300,186); transform: translate(-50%,-50%); .bgc(#fff); .tc; .-a(#EEEEEE);
+    p, a { .fs(15); .lh(18); .ls(-0.01em); color:#555; .semi-bold; }
     .del-inner { .pt(60); .-box; .f; .rel;
-      p { .fs(15); .lh(18); .ls(-0.01em); color:#555; }
       .btns { .fs(0); .wh(100%,48); .abs; .lb; .-t(#eee);
-        a { .fs(15); .lh(18); .ls(-0.01em); color:#555; .w(50%); .lh(48); .ib;
+        a { .w(50%); .lh(48); .ib;
           &.cancel-btn { .-r(#eee); .-box; }
         }
       }
+    }
+    .comp-inner { .pt(40); .-box;
+      img { .wh(26,26); .mb(14); }
+      .confirm { .wh(100%,48); .lh(48); .abs; .lb; .-t(#EEEEEE); }
     }
   }
   &.on { .ib; }

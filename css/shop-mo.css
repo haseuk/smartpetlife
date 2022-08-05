@@ -58,6 +58,16 @@ input[type='number'] {
   font-size: 4.16666667vw;
   color: #AAAAAA;
 }
+input[type=number]:disabled {
+  -webkit-opacity: 1;
+  opacity: 1;
+  color: #333;
+}
+input[type=text]:disabled {
+  -webkit-opacity: 1;
+  opacity: 1;
+  color: #333;
+}
 .container {
   height: 100%;
 }

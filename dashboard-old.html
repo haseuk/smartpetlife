@@ -1971,39 +1971,36 @@
 
   // 그래프
   let slide1Val1 = 7 //진료
-  let slide1Val2 = 10 //입원
-  let slide1Val3 = 10 //수술
-  let slide1Val4 = 8 //약처방
-  let slide1Val5 = 15 //미용
-  let slide1Val6 = 10 //간식및물품
-  let slide1Val7 = 30 //기타
+  let slide1Val2 = 10 //약처방
+  let slide1Val3 = 10 //미용
+  let slide1Val4 = 8 //간식 및 용품
+  let slide1Val5 = 15 //사료
+  let slide1Val6 = 30 //기타
 
-  let slide2Val1 = 10 //진료
-  let slide2Val2 = 5 //입원
-  let slide2Val3 = 10 //수술
-  let slide2Val4 = 3 //약처방
-  let slide2Val5 = 10 //미용
-  let slide2Val6 = 4 //간식및물품
-  let slide2Val7 = 30 //기타
+  let slide2Val1 = 10//진료
+  let slide2Val2 = 5  //약처방
+  let slide2Val3 = 10 //미용
+  let slide2Val4 = 3 //간식 및 용품
+  let slide2Val5 = 10 //사료
+  let slide2Val6 = 4  //기타
 
   let slide3Val1 = 5 //진료
-  let slide3Val2 = 20 //입원
-  let slide3Val3 = 10 //수술
-  let slide3Val4 = 4 //약처방
-  let slide3Val5 = 2 //미용
-  let slide3Val6 = 6 //간식및물품
-  let slide3Val7 = 40 //기타
+  let slide3Val2 = 20 //약처방
+  let slide3Val3 = 10 //미용
+  let slide3Val4 = 4 //간식 및 용품
+  let slide3Val5 = 2  //사료
+  let slide3Val6 = 6  //기타
 
-  let data1 = [slide1Val1, slide1Val2, slide1Val3, slide1Val4, slide1Val5, slide1Val6, slide1Val7 ]
-  let data2 = [slide2Val1, slide2Val2, slide2Val3, slide2Val4, slide2Val5, slide2Val6, slide2Val7 ]
-  let data3 = [slide3Val1, slide3Val2, slide3Val3, slide3Val4, slide3Val5, slide3Val6, slide3Val7 ]
+  let data1 = [slide1Val1, slide1Val2, slide1Val3, slide1Val4, slide1Val5, slide1Val6]
+  let data2 = [slide2Val1, slide2Val2, slide2Val3, slide2Val4, slide2Val5, slide2Val6]
+  let data3 = [slide3Val1, slide3Val2, slide3Val3, slide3Val4, slide3Val5, slide3Val6]
   new Chart(document.getElementById("doughnut-chart1"), {
     type: 'doughnut',
 
     data: {
       datasets: [
         {
-          backgroundColor: ["#1A8A5C","#F7CC01","#FF9F79","#669DED","#FC91AD","#A99AEE","#FFFFFF"],
+          backgroundColor: ["#1A8A5C","#669DED","#F7CC01","#FF9F79","#A99AEE","#EEEEEE"],
           data: data1,
         }
       ]
@@ -2019,7 +2016,7 @@
     data: {
       datasets: [
         {
-          backgroundColor: ["#1A8A5C","#F7CC01","#FF9F79","#669DED","#FC91AD","#A99AEE","#FFFFFF"],
+          backgroundColor: ["#1A8A5C","#669DED","#F7CC01","#FF9F79","#A99AEE","#EEEEEE"],
           data: data2,
         }
       ]
@@ -2035,7 +2032,7 @@
     data: {
       datasets: [
         {
-          backgroundColor: ["#1A8A5C","#F7CC01","#FF9F79","#669DED","#FC91AD","#A99AEE","#FFFFFF"],
+          backgroundColor: ["#1A8A5C","#669DED","#F7CC01","#FF9F79","#A99AEE","#EEEEEE"],
           data: data3,
         }
       ]

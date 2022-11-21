@@ -200,12 +200,12 @@
     bottom: -1.82291667vw;
   }
   .container .wrap section article.banner .swiper .swiper-pagination .swiper-pagination-bullet {
-    width: 0.52083333vw;
-    height: 0.52083333vw;
+    width: 0.78125vw;
+    height: 0.78125vw;
     margin-top: 0vw;
-    margin-right: 0.52083333vw;
+    margin-right: 0.78125vw;
     margin-bottom: 0vw;
-    margin-left: 0.52083333vw;
+    margin-left: 0.78125vw;
   }
   .container .wrap section article.ins {
     padding-top: 26.04166667vw;
@@ -757,7 +757,7 @@
     margin-top: 13.02083333vw;
   }
   .container .wrap section.cart article.order-summary .purch-info {
-    padding-top: 3.125vw;
+    padding-top: 5.20833333vw;
   }
   .container .wrap section.cart article.order-summary .purch-info p,
   .container .wrap section.cart article.order-summary .purch-info address {

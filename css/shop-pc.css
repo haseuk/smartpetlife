@@ -234,12 +234,12 @@
     bottom: -0.90909091rem;
   }
   .container .wrap section article.banner .swiper .swiper-pagination .swiper-pagination-bullet {
-    width: 0.18181818rem;
-    height: 0.18181818rem;
+    width: 0.27272727rem;
+    height: 0.27272727rem;
     margin-top: 0rem;
-    margin-right: 0.18181818rem;
+    margin-right: 0.27272727rem;
     margin-bottom: 0rem;
-    margin-left: 0.18181818rem;
+    margin-left: 0.27272727rem;
   }
   .container .wrap section article.ins {
     padding-top: 14.09090909rem;
@@ -762,7 +762,7 @@
     margin-bottom: 0rem;
   }
   .container .wrap section.cart article.order-summary .purch-info {
-    padding-top: 1.09090909rem;
+    padding-top: 1.81818182rem;
   }
   .container .wrap section.cart article.order-summary .purch-info p,
   .container .wrap section.cart article.order-summary .purch-info address {
